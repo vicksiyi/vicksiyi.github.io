@@ -1,0 +1,408 @@
+
+ <!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  
+    <title>隔壁小陈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="小陈">
+    
+
+    
+    <meta name="description" content="个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="隔壁小陈">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="隔壁小陈">
+<meta property="og:description" content="个人博客">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="隔壁小陈">
+<meta name="twitter:description" content="个人博客">
+
+    
+    <link rel="alternative" href="/atom.xml" title="隔壁小陈" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="隔壁小陈" title="隔壁小陈"></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="隔壁小陈">隔壁小陈</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search">
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</ul></nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main">
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/index/" title="Sass | 今天有感" itemprop="url">Sass | 今天有感</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T16:33:55.000Z" itemprop="datePublished"> Published 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>可从官网了解：<a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html" target="_blank" rel="noopener">http://sass-lang.com/documentation/file.SASS_REFERENCE.html</a></p>
+<p>目录结构：<br><img src="https://img-blog.csdnimg.cn/20190211024835231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="test-scss"><a href="#test-scss" class="headerlink" title="test.scss"></a>test.scss</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br></pre></td><td class="code"><pre><span class="line">//变量</span><br><span class="line">$blue : #bdc4fd;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	<span class="attribute">coloe</span>: $blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//变量(镶嵌在字符串之中)</span><br><span class="line">$side : left;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.router</span> &#123;</span><br><span class="line">	border-#&#123;$side&#125;-radius: 10px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//计算</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: (<span class="number">14px</span>/<span class="number">2</span>);</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">200px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//嵌套</span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">h1</span> &#123;</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	h1 &#123;</span><br><span class="line">		<span class="selector-tag">color</span>: <span class="selector-tag">aquamarine</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//继承</span><br><span class="line"><span class="selector-class">.class</span> &#123;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.class2</span> &#123;</span><br><span class="line">	@extend .class;</span><br><span class="line">	<span class="selector-tag">font-size</span>: 10<span class="selector-tag">px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*!</span></span><br><span class="line"><span class="comment">注意：要使用这个解析才能再css文件里面显示出来，否则识别出来是scss文件的解析</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">//Mixin有点像C语言的宏（macro），是可以重用的代码块。</span><br><span class="line">@<span class="keyword">mixin</span> left &#123;</span><br><span class="line">	<span class="selector-tag">float</span>: <span class="selector-tag">left</span>;</span><br><span class="line">	<span class="selector-tag">display</span>: <span class="selector-tag">inline</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.div2</span> &#123;</span><br><span class="line">	@include left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//Mixin传参</span><br><span class="line">@<span class="keyword">mixin</span> left2($value : <span class="number">20px</span>) &#123;</span><br><span class="line">	<span class="selector-tag">float</span>: <span class="selector-tag">left</span>;</span><br><span class="line">	top: $value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.div3</span> &#123;</span><br><span class="line">	@include left2(30px)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//颜色函数</span><br><span class="line"><span class="selector-class">.foooter</span> &#123;</span><br><span class="line">	<span class="attribute">color</span>: <span class="built_in">lighten</span>(#cc3, 10%);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter2</span> &#123;</span><br><span class="line">	color: lighten(#cc3, 10%); // #d6d65c</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter3</span> &#123;</span><br><span class="line">	color: darken(#cc3, 10%); // #a3a329</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter4</span> &#123;</span><br><span class="line">	color: grayscale(#cc3); // #808080</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter5</span> &#123;</span><br><span class="line">	color: complement(#cc3); // #33c</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//插入文件</span><br><span class="line">@<span class="keyword">import</span> <span class="string">'./scss/index.scss'</span>;</span><br><span class="line">@<span class="keyword">import</span> <span class="string">"foo.css"</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//条件语句</span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">	@if 1+1==2 &#123;</span><br><span class="line">		<span class="selector-tag">background</span>: <span class="selector-id">#1231</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	@<span class="keyword">if</span> <span class="number">1</span>+<span class="number">1</span>&gt;<span class="number">2</span> &#123;</span><br><span class="line">		<span class="selector-tag">border</span>: <span class="selector-id">#666</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	@<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="selector-tag">background</span>: <span class="selector-id">#ffffff</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//循环语句</span><br><span class="line">@<span class="keyword">for</span> $i from <span class="number">1</span> to <span class="number">10</span> &#123;</span><br><span class="line">	.border-#&#123;$i&#125; &#123;</span><br><span class="line">		border: #&#123;$i&#125; solid blue;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$i: 6;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">while</span> $i&gt;<span class="number">0</span> &#123;</span><br><span class="line">	.item-#&#123;$i&#125; &#123;</span><br><span class="line">		width: 2em * $i;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	$i: $i - 2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">each</span> $member in a,b,c,d &#123;</span><br><span class="line">	.#&#123;$member&#125; &#123;</span><br><span class="line">		background-image: url("/image/#&#123;$member&#125;.jpg");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//自定义函数</span><br><span class="line">@<span class="keyword">function</span> double($n)&#123;</span><br><span class="line">	@<span class="keyword">return</span> $n * <span class="number">2</span>; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#siderbar</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="built_in">double</span>(10)<span class="built_in">px</span>;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="scss-index-css"><a href="#scss-index-css" class="headerlink" title="./scss/index.css"></a>./scss/index.css</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$index : 100px;</span><br><span class="line"><span class="selector-class">.vick</span>&#123;</span><br><span class="line">    <span class="attribute">backdrop-filter</span>: $index;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="编译结果"><a href="#编译结果" class="headerlink" title="编译结果"></a>编译结果</h3><p>test.css</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">charset</span> <span class="string">"UTF-8"</span>;</span><br><span class="line">@<span class="keyword">import</span> url(foo.css);</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">coloe</span>: <span class="number">#bdc4fd</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.router</span> &#123;</span><br><span class="line">  <span class="attribute">border-left-radius</span>: <span class="number">10px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">7px</span>;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">200px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#666</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: aquamarine; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.class</span>, <span class="selector-class">.class2</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">10px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.class2</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">10px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*!</span></span><br><span class="line"><span class="comment">注意：要使用这个解析才能再css文件里面显示出来，否则识别出来是scss文件的解析</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.div2</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">display</span>: inline; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.div3</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">30px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#d6d65c</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter2</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#d6d65c</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter3</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#a3a329</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter4</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: gray; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter5</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#3333cc</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.vick</span> &#123;</span><br><span class="line">  <span class="attribute">backdrop-filter</span>: <span class="number">100px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#1231</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-1</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-2</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-3</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">3</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-4</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">4</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-5</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">5</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-6</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">6</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-7</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">7</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-8</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">8</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-9</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">9</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item-6</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">12em</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item-4</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">8em</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item-2</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">4em</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.a</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">"/image/a.jpg"</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.b</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">"/image/b.jpg"</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.c</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">"/image/c.jpg"</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.d</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">"/image/d.jpg"</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#siderbar</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">20</span> px; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*# sourceMappingURL=test.css.map */</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装</li>
+</ul>
+<p>SASS是Ruby语言写的，但是两者的语法没有关系。不懂Ruby，照样使用。只是必须先安装Ruby，然后再安装SASS。</p>
+<p>假定你已经安装好了Ruby，接着在命令行输入下面的命令：</p>
+<p>　　</p>
+<blockquote>
+<p>gem install sass</p>
+</blockquote>
+<p>然后，就可以使用了。</p>
+<ul>
+<li>使用</li>
+</ul>
+<p>SASS文件就是普通的文本文件，里面可以直接使用CSS语法。文件后缀名是.scss，意思为Sassy CSS。</p>
+<p>下面的命令，可以在屏幕上显示.scss文件转化的css代码。（假设文件名为test。）</p>
+<p>　　</p>
+<blockquote>
+<p>sass test.scss</p>
+</blockquote>
+<p>如果要将显示结果保存成文件，后面再跟一个.css文件名。</p>
+<p>　　</p>
+<blockquote>
+<p>sass test.scss test.css</p>
+</blockquote>
+<p>SASS提供四个编译风格的选项：</p>
+<p>　　</p>
+<ol>
+<li>nested：嵌套缩进的css代码，它是默认值</li>
+<li>expanded：没有缩进的、扩展的css代码</li>
+<li>compact：简洁格式的css代码</li>
+<li>compressed：压缩后的css代码</li>
+</ol>
+<p>生产环境当中，一般使用最后一个选项。</p>
+<p>　　</p>
+<blockquote>
+<p>sass –style compressed test.sass test.css</p>
+</blockquote>
+<p>你也可以让SASS监听某个文件或目录，一旦源文件有变动，就自动生成编译后的版本。</p>
+<p>　　</p>
+<blockquote>
+<p>// watch a file</p>
+<p>　　sass –watch input.scss:output.css</p>
+<p>　　// watch a directory</p>
+<p>　　sass –watch app/sass:public/stylesheets</p>
+</blockquote>
+<p>SASS的官方网站，提供了一个<a href="https://www.sassmeister.com/" target="_blank" rel="noopener">在线转换器</a>。你可以在那里，试运行下面的各种例子。</p>
+
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Sass/">Sass</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/Sass/" title="Sass">Sass<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer">
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Larry Page in Google. <br>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font">
+		
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		
+		<a href="/about" target="_blank" title="小陈">小陈</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+ </html>
