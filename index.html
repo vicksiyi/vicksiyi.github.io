@@ -82,7 +82,156 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/02/12/index/" title="Sass | 今天有感" itemprop="url">Sass | 今天有感</a>
+      <a href="/2019/02/12/html1/" title="HTML5 | Application Cache" itemprop="url">HTML5 | Application Cache</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T17:37:54.000Z" itemprop="datePublished"> Published 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="什么是应用程序缓存（Application-Cache）？"><a href="#什么是应用程序缓存（Application-Cache）？" class="headerlink" title="什么是应用程序缓存（Application Cache）？"></a>什么是应用程序缓存（Application Cache）？</h2><p>web 应用可进行缓存，并可在没有因特网连接时进行访问。</p>
+<h2 id="三大优势："><a href="#三大优势：" class="headerlink" title="三大优势："></a>三大优势：</h2><ul>
+<li>离线浏览 - 用户可在应用离线时使用它们</li>
+<li>速度 - 已缓存资源加载得更快</li>
+<li>减少服务器负载 - 浏览器将只从服务器下载更新过或更改过的资源。</li>
+</ul>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>如需启用应用程序缓存，请在文档的 <html> 标签中包含 manifest 属性：</html></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html manifest=&quot;demo.appcache&quot;&gt;</span><br><span class="line">...</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>每个指定了 manifest 的页面在用户对其访问时都会被缓存。如果未指定 manifest 属性，则页面不会被缓存（除非在 manifest 文件中直接指定了该页面）。</p>
+<p>manifest 文件的建议的文件扩展名是：”.appcache”。</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>manifest 文件需要配置正确的 <a href="https://blog.csdn.net/weixin_41593408/article/details/86684919" target="_blank" rel="noopener">MIME-type</a>，即 “text/cache-manifest”。必须在 web 服务器上进行配置。</p>
+<h2 id="Manifest-文件"><a href="#Manifest-文件" class="headerlink" title="Manifest 文件"></a>Manifest 文件</h2><p>manifest 文件可分为三个部分：</p>
+<ul>
+<li>CACHE MANIFEST - 在此标题下列出的文件将在首次下载后进行缓存</li>
+<li>NETWORK - 在此标题下列出的文件需要与服务器的连接，且不会被缓存</li>
+<li>FALLBACK - 在此标题下列出的文件规定当页面无法访问时的回退页面（比如 404 页面）</li>
+</ul>
+<p>下面举个例子来说明一下：<br><strong>&gt;index.html</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html manifest=&quot;index.appcache&quot; &gt;   &lt;!-- manifest指定本地的缓存文件 --&gt;</span><br><span class="line">&lt;head lang=&quot;en&quot;&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"> </span><br><span class="line">    &lt;script src=&quot;https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=&quot;https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;img src=&quot;http://wx2.sinaimg.cn/large/83940082gy1fpmpho2xl3j20nm11i0ws.jpg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>&gt;index.appcache</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line"></span><br><span class="line"># 注释以#开头</span><br><span class="line"># 下面是要缓存的文件</span><br><span class="line">CACHE:</span><br><span class="line">https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js</span><br><span class="line">https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js</span><br><span class="line"></span><br><span class="line"># 指定必须联网才能访问的文件</span><br><span class="line">NETWORK:</span><br><span class="line">http://wx2.sinaimg.cn/large/83940082gy1fpmpho2xl3j20nm11i0ws.jpg</span><br><span class="line"></span><br><span class="line"># 网页无法访问时要访问的页面</span><br><span class="line">FALLBACK:</span><br><span class="line">404.html</span><br></pre></td></tr></table></figure>
+<h2 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h2><p>所有主流浏览器均支持应用程序缓存，除了 Internet Explorer。</p>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><ul>
+<li>以 “#” 开头的是注释行，但也可满足其他用途。应用的缓存会在其 manifest 文件更改时被更新。</li>
+<li>如果您编辑了一幅图片，或者修改了一个 JavaScript 函数，这些改变都不会被重新缓存。</li>
+<li>更新注释行中的日期和版本号是一种使浏览器重新缓存文件的办法。</li>
+</ul>
+<h2 id="更新缓存"><a href="#更新缓存" class="headerlink" title="更新缓存"></a>更新缓存</h2><p>一旦应用被缓存，它就会保持缓存直到发生下列情况：</p>
+<ul>
+<li>用户清空浏览器缓存</li>
+<li>manifest 文件被修改（阅读上面的tips）</li>
+<li>由程序来更新应用缓存</li>
+</ul>
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line"># 2012-02-21 v1.0.0</span><br><span class="line">/theme.css</span><br><span class="line">/logo.gif</span><br><span class="line">/main.js</span><br><span class="line"></span><br><span class="line">NETWORK:</span><br><span class="line">login.asp</span><br><span class="line"></span><br><span class="line">FALLBACK:</span><br><span class="line">/html5/ /404.html</span><br></pre></td></tr></table></figure>
+<p><strong>温馨提示</strong></p>
+<p>一旦文件被缓存，则浏览器会继续展示已缓存的版本，即使您修改了服务器上的文件。为了确保浏览器更新缓存，您需要更新 manifest 文件。</p>
+<p><strong>容量问题：</strong> 某些浏览器对缓存数据的容量限制可能不太一样（某些浏览器设置的限制是每个站点 5MB）</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/HTML5/">HTML5</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/sass2/" title="SASS用法指南" itemprop="url">SASS用法指南</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T17:36:26.000Z" itemprop="datePublished"> Published 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <ul>
+<li><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Sass/">Sass</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/sass1/" title="Sass | 今天有感" itemprop="url">Sass | 今天有感</a>
   </h1>
   <p class="article-author">By
        
@@ -148,7 +297,6 @@
 </blockquote>
 <p>SASS的官方网站，提供了一个<a href="https://www.sassmeister.com/" target="_blank" rel="noopener">在线转换器</a>。你可以在那里，试运行下面的各种例子。</p>
 
-
         
         
         <p class="article-more-link">
@@ -202,7 +350,11 @@
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/Sass/" title="Sass">Sass<sup>1</sup></a></li>
+				<li><a href="/tags/Sass/" title="Sass">Sass<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/HTML5/" title="HTML5">HTML5<sup>1</sup></a></li>
 			
 		
 		</ul>
