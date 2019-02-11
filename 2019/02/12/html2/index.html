@@ -4,25 +4,27 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
   
-    <title>SASS用法指南 | 隔壁小陈</title>
+    <title>微信小程序 | wxparse解析HTML | 隔壁小陈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小陈">
     
 
     
-    <meta name="description" content="SASS用法指南">
-<meta name="keywords" content="Sass">
+    <meta name="description" content="github上下载wxParsehttps://github.com/icindy/wxParse 1、下载到项目里面在app.wxss全局样式文件中，需要引入wxParse的样式表 1@import &amp;quot;/page/wxParse/wxParse.wxss&amp;quot;; 2、在需要加载html内容的页面对应的js文件里引入wxParse 1var WxParse = require(&amp;a">
+<meta name="keywords" content="HTML5">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SASS用法指南">
-<meta property="og:url" content="http://yoursite.com/2019/02/12/sass2/index.html">
+<meta property="og:title" content="微信小程序 | wxparse解析HTML">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/html2/index.html">
 <meta property="og:site_name" content="隔壁小陈">
-<meta property="og:description" content="SASS用法指南">
+<meta property="og:description" content="github上下载wxParsehttps://github.com/icindy/wxParse 1、下载到项目里面在app.wxss全局样式文件中，需要引入wxParse的样式表 1@import &amp;quot;/page/wxParse/wxParse.wxss&amp;quot;; 2、在需要加载html内容的页面对应的js文件里引入wxParse 1var WxParse = require(&amp;a">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-11T17:37:10.827Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190207143017945.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-02-11T19:37:37.533Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SASS用法指南">
-<meta name="twitter:description" content="SASS用法指南">
+<meta name="twitter:title" content="微信小程序 | wxparse解析HTML">
+<meta name="twitter:description" content="github上下载wxParsehttps://github.com/icindy/wxParse 1、下载到项目里面在app.wxss全局样式文件中，需要引入wxParse的样式表 1@import &amp;quot;/page/wxParse/wxParse.wxss&amp;quot;; 2、在需要加载html内容的页面对应的js文件里引入wxParse 1var WxParse = require(&amp;a">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190207143017945.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70">
 
     
     
@@ -79,14 +81,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/02/12/sass2/" title="SASS用法指南" itemprop="url">SASS用法指南</a>
+      <a href="/2019/02/12/html2/" title="微信小程序 | wxparse解析HTML" itemprop="url">微信小程序 | wxparse解析HTML</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
 		
   </p><p class="article-time">
-    <time datetime="2019-02-11T17:36:26.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    <time datetime="2019-02-11T19:35:20.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
     
   </p>
 </header>
@@ -99,9 +101,16 @@
 		
 		</div>
 		
-		<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></li>
-</ul>
+		<p><strong>github上下载wxParse</strong><br><a href="https://github.com/icindy/wxParse" target="_blank" rel="noopener">https://github.com/icindy/wxParse</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20190207143017945.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>1、下载到项目里面<br>在app.wxss全局样式文件中，需要引入wxParse的样式表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;/page/wxParse/wxParse.wxss&quot;;</span><br></pre></td></tr></table></figure>
+<p>2、在需要加载html内容的页面对应的js文件里引入wxParse</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var WxParse = require(&apos;../../wxParse/wxParse.js&apos;);</span><br></pre></td></tr></table></figure>
+<p>3、通过调用WxParse.wxParse方法来设置html内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">* WxParse.wxParse(bindName , type, data, target,imagePadding)</span><br><span class="line">* 1.bindName绑定的数据名(必填)</span><br><span class="line">* 2.type可以为html或者md(必填)</span><br><span class="line">* 3.data为传入的具体数据(必填)</span><br><span class="line">* 4.target为Page对象,一般为this(必填)</span><br><span class="line">* 5.imagePadding为当图片自适应是左右的单一padding(默认为0,可选)</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">Page(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">  &#125;,</span><br><span class="line">  onLoad: function () &#123;</span><br><span class="line">    var that = this;</span><br><span class="line">    wx.request(&#123;</span><br><span class="line">        url: &apos;&apos;, </span><br><span class="line">        method: &apos;POST&apos;,</span><br><span class="line">        data: &#123;</span><br><span class="line">            &apos;id&apos;:13</span><br><span class="line">        &#125;,</span><br><span class="line">        header: &#123;</span><br><span class="line">            &apos;content-type&apos;: &apos;application/json&apos;</span><br><span class="line">        &#125;,</span><br><span class="line">        success: function(res) &#123;</span><br><span class="line">            var article = res.data[0].post;</span><br><span class="line">            WxParse.wxParse(&apos;article&apos;, &apos;html&apos;, article, that,5);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>4、在页面中引用模板</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;import src=&quot;../../wxParse/wxParse.wxml&quot;/&gt;</span><br><span class="line">&lt;template is=&quot;wxParse&quot; data=&quot;&#123;&#123;wxParseData:article.nodes&#125;&#125;&quot;/&gt;</span><br></pre></td></tr></table></figure>
+<p>这样就可以在微信小程序中嵌入html内容了</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -110,7 +119,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Sass/">Sass</a>
+  <span></span> <a href="/tags/HTML5/">HTML5</a>
   </div>
 
 </div>
@@ -119,7 +128,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2019/02/12/sass2/" data-title="SASS用法指南 | 隔壁小陈" data-tsina="" class="share clearfix">
+	  <div data-url="http://yoursite.com/2019/02/12/html2/" data-title="微信小程序 | wxparse解析HTML | 隔壁小陈" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -133,18 +142,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev">
- <a href="/2019/02/12/html1/" title="HTML5 | Application Cache">
+ <a href="/2019/02/12/html3/" title="HTML5 | Web 存储">
   <strong>上一篇：</strong><br>
   <span>
-  HTML5 | Application Cache</span>
+  HTML5 | Web 存储</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2019/02/12/sass1/" title="Sass | 今天有感">
+<a href="/2019/02/12/html1/" title="HTML5 | Application Cache">
  <strong>下一篇：</strong><br> 
- <span>Sass | 今天有感
+ <span>HTML5 | Application Cache
 </span>
 </a>
 </div>

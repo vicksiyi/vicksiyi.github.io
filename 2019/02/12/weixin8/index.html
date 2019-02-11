@@ -1,0 +1,570 @@
+
+ <!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  
+    <title>微信小程序 | UI框架&amp;组件库 | 隔壁小陈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="小陈">
+    
+
+    
+    <meta name="description" content="想要开发出一套高质量的小程序，运用框架，组件库是省时省力省心必不可少一部分，随着小程序日渐火爆，各种不同类型的小程序也渐渐更新，其中不乏一些优秀好用的框架/组件库。 1：WeUI 小程序–使用教程 https://weui.io/  官方介绍：WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。小程序开发中最常用到的一款">
+<meta name="keywords" content="微信小程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信小程序 | UI框架&amp;组件库">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/weixin8/index.html">
+<meta property="og:site_name" content="隔壁小陈">
+<meta property="og:description" content="想要开发出一套高质量的小程序，运用框架，组件库是省时省力省心必不可少一部分，随着小程序日渐火爆，各种不同类型的小程序也渐渐更新，其中不乏一些优秀好用的框架/组件库。 1：WeUI 小程序–使用教程 https://weui.io/  官方介绍：WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。小程序开发中最常用到的一款">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5640239-82f8e61acddff533.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5640239-8b39f4afe3d6612a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5640239-1e64e4c7e2b9b121.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5640239-7918b16afedbcec1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5640239-3e05e476102e9576.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5640239-0199c16af08dcf53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+<meta property="og:updated_time" content="2019-02-11T19:47:55.890Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="微信小程序 | UI框架&amp;组件库">
+<meta name="twitter:description" content="想要开发出一套高质量的小程序，运用框架，组件库是省时省力省心必不可少一部分，随着小程序日渐火爆，各种不同类型的小程序也渐渐更新，其中不乏一些优秀好用的框架/组件库。 1：WeUI 小程序–使用教程 https://weui.io/  官方介绍：WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。小程序开发中最常用到的一款">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/5640239-82f8e61acddff533.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
+
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="隔壁小陈" title="隔壁小陈"></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="隔壁小陈">隔壁小陈</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">时间轴</a></li>
+					
+						<li><a href="/about">关于小陈</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="https://www.baidu.com/s" target="_blank">
+							<label>Search</label>
+						<input name="s" type="hidden" value=""><input type="text" name="q" size="30" placeholder="搜索"><br>
+						</form>
+					
+					</li>
+				</ul>
+			</ul></nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope="" itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/weixin8/" title="微信小程序 | UI框架&amp;组件库" itemprop="url">微信小程序 | UI框架&amp;组件库</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:43:59.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1：WeUI-小程序–使用教程"><span class="toc-number">1.</span> <span class="toc-text">1：WeUI 小程序–使用教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2：美团小程序框架mpvue"><span class="toc-number">2.</span> <span class="toc-text">2：美团小程序框架mpvue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3：组件化开发框架wepy"><span class="toc-number">3.</span> <span class="toc-text">3：组件化开发框架wepy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4：官方框架MINA"><span class="toc-number">4.</span> <span class="toc-text">4：官方框架MINA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5：Tina-js-一款轻巧的渐进式微信小程序框架"><span class="toc-number">5.</span> <span class="toc-text">5：Tina.js 一款轻巧的渐进式微信小程序框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6：前端框架weweb"><span class="toc-number">6.</span> <span class="toc-text">6：前端框架weweb</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7：微信UI组件库-iView-Weapp"><span class="toc-number">7.</span> <span class="toc-text">7：微信UI组件库 iView Weapp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8：ZanUI-WeApp-–-一个颜值高、好用、易扩展的微信小程序-UI-库"><span class="toc-number">8.</span> <span class="toc-text">8：ZanUI-WeApp – 一个颜值高、好用、易扩展的微信小程序 UI 库</span></a></li></ol>
+		
+		</div>
+		
+		<p>想要开发出一套高质量的小程序，运用框架，组件库是省时省力省心必不可少一部分，随着小程序日渐火爆，各种不同类型的小程序也渐渐更新，其中不乏一些优秀好用的框架/组件库。</p>
+<h2 id="1：WeUI-小程序–使用教程"><a href="#1：WeUI-小程序–使用教程" class="headerlink" title="1：WeUI 小程序–使用教程"></a>1：WeUI 小程序–使用教程</h2><blockquote>
+<p><a href="https://weui.io/" target="_blank" rel="noopener">https://weui.io/</a></p>
+</blockquote>
+<p>官方介绍：WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。小程序开发中最常用到的一款框架，受广大开发人员的欢迎。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-82f8e61acddff533.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="2：美团小程序框架mpvue"><a href="#2：美团小程序框架mpvue" class="headerlink" title="2：美团小程序框架mpvue"></a>2：美团小程序框架mpvue</h2><blockquote>
+<p>Github：<a href="https://github.com/Meituan-Dianping/mpvue" target="_blank" rel="noopener">https://github.com/Meituan-Dianping/mpvue</a><br>官网： <a href="http://mpvue.com/" target="_blank" rel="noopener">http://mpvue.com/</a></p>
+</blockquote>
+<p>官方介绍：mpvue是一个使用 Vue.js开发小程序的前端框架。框架基于 Vue.js核心，mpvue修改了 Vue.js的 runtime和 compiler实现，使其可以运行在小程序环境中，从而为小程序开发引入了整套Vue.js开发体验。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-8b39f4afe3d6612a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="3：组件化开发框架wepy"><a href="#3：组件化开发框架wepy" class="headerlink" title="3：组件化开发框架wepy"></a>3：组件化开发框架wepy</h2><blockquote>
+<p>Github地址: <a href="https://github.com/Tencent/wepy" target="_blank" rel="noopener">https://github.com/Tencent/wepy</a><br>官网地址： <a href="https://tencent.github.io/wepy" target="_blank" rel="noopener">https://tencent.github.io/wepy</a></p>
+</blockquote>
+<p>官方介绍：组件化开发，完美解决组件隔离，组件嵌套，组件通信等问题,支持使用第三方 npm 资源，自动处理 npm 资源之间的依赖关系，完美兼容所有无平台依赖的 npm 资源包.<br><img src="https://upload-images.jianshu.io/upload_images/5640239-1e64e4c7e2b9b121.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="4：官方框架MINA"><a href="#4：官方框架MINA" class="headerlink" title="4：官方框架MINA"></a>4：官方框架MINA</h2><blockquote>
+<p>地址：<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/MINA.html" target="_blank" rel="noopener">https://developers.weixin.qq.com/miniprogram/dev/framework/MINA.html</a></p>
+</blockquote>
+<p>官方介绍：框架提供了自己的视图层描述语言 WXML 和 WXSS，以及基于 JavaScript 的逻辑层框架，并在视图层与逻辑层间提供了数据传输和事件系统，可以让开发者可以方便的聚焦于数据与逻辑上。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-7918b16afedbcec1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="5：Tina-js-一款轻巧的渐进式微信小程序框架"><a href="#5：Tina-js-一款轻巧的渐进式微信小程序框架" class="headerlink" title="5：Tina.js 一款轻巧的渐进式微信小程序框架"></a>5：Tina.js 一款轻巧的渐进式微信小程序框架</h2><blockquote>
+<p>Tina.js 开源框架地址： <a href="https://github.com/tinajs/tina" target="_blank" rel="noopener">https://github.com/tinajs/tina</a></p>
+</blockquote>
+<p>官方介绍：是一款轻巧的渐进式微信小程序框架，保留 MINA (微信小程序官方框架) 的大部分 API 设计；无论你有无小程序开发经验，都可以轻松过渡上手。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-3e05e476102e9576.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="6：前端框架weweb"><a href="#6：前端框架weweb" class="headerlink" title="6：前端框架weweb"></a>6：前端框架weweb</h2><blockquote>
+<p>地址: <a href="https://github.com/wdfe/weweb" target="_blank" rel="noopener">https://github.com/wdfe/weweb</a></p>
+</blockquote>
+<p>官方介绍：weweb是一个兼容小程序语法的前端框架，你可以用小程序的写法，来写web应用。如果你已经有小程序了，通过它你可以将你的小程序运行在浏览器中。</p>
+<h2 id="7：微信UI组件库-iView-Weapp"><a href="#7：微信UI组件库-iView-Weapp" class="headerlink" title="7：微信UI组件库 iView Weapp"></a>7：微信UI组件库 iView Weapp</h2><blockquote>
+<p><a href="https://weapp.iviewui.com/" target="_blank" rel="noopener">https://weapp.iviewui.com/</a></p>
+</blockquote>
+<p>介绍：iView Weapp 提供了与 iView 一致的 UI 和尽可能相同的接口名称，大幅度降低了学习成本，是一套一套高质量的微信小程序 UI 组件库。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-0199c16af08dcf53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="8：ZanUI-WeApp-–-一个颜值高、好用、易扩展的微信小程序-UI-库"><a href="#8：ZanUI-WeApp-–-一个颜值高、好用、易扩展的微信小程序-UI-库" class="headerlink" title="8：ZanUI-WeApp – 一个颜值高、好用、易扩展的微信小程序 UI 库"></a>8：ZanUI-WeApp – 一个颜值高、好用、易扩展的微信小程序 UI 库</h2><blockquote>
+<p><a href="https://cnodejs.org/topic/589d625a5c8036f7019e7a4a" target="_blank" rel="noopener">https://cnodejs.org/topic/589d625a5c8036f7019e7a4a</a></p>
+</blockquote>
+<p>官方介绍：ZanUI-WeApp结合了微信的视觉规范，为用户提供更加统一的使用感受。 包含 badge、btn、等共计 17 类组件或元素。</p>
+<p><a href="https://blog.csdn.net/qq_36538012/article/details/80882709" target="_blank" rel="noopener">原文</a></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2019/02/12/weixin8/" data-title="微信小程序 | UI框架&amp;组件库 | 隔壁小陈" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2019/02/12/weixin7/" title="update之微信小程序BUG">
+ <strong>下一篇：</strong><br> 
+ <span>update之微信小程序BUG
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1：WeUI-小程序–使用教程"><span class="toc-number">1.</span> <span class="toc-text">1：WeUI 小程序–使用教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2：美团小程序框架mpvue"><span class="toc-number">2.</span> <span class="toc-text">2：美团小程序框架mpvue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3：组件化开发框架wepy"><span class="toc-number">3.</span> <span class="toc-text">3：组件化开发框架wepy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4：官方框架MINA"><span class="toc-number">4.</span> <span class="toc-text">4：官方框架MINA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5：Tina-js-一款轻巧的渐进式微信小程序框架"><span class="toc-number">5.</span> <span class="toc-text">5：Tina.js 一款轻巧的渐进式微信小程序框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6：前端框架weweb"><span class="toc-number">6.</span> <span class="toc-text">6：前端框架weweb</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7：微信UI组件库-iView-Weapp"><span class="toc-number">7.</span> <span class="toc-text">7：微信UI组件库 iView Weapp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8：ZanUI-WeApp-–-一个颜值高、好用、易扩展的微信小程序-UI-库"><span class="toc-number">8.</span> <span class="toc-text">8：ZanUI-WeApp – 一个颜值高、好用、易扩展的微信小程序 UI 库</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/微信小程序/" title="微信小程序">微信小程序<sup>8</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/HTML5/" title="HTML5">HTML5<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Sass/" title="Sass">Sass<sup>2</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://momentjs.com/" target="_blank" title="Moment">Moment</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://www.inoreader.com/" target="_blank" title="inoreader">inoreader</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://gulpjs.com/" target="_blank" title="Gulp">Gulp</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ruanyifeng.com/blog/" target="_blank" title="阮一峰官网">阮一峰官网</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://www.easyswoole.com/" target="_blank" title="EasySwoole">EasySwoole</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="linkslist">
+  <p class="asidetitle">其他博客</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://me.csdn.net/weixin_41593408/" target="_blank" title="CSDN">CSDN</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://juejin.im/user/5c4aa1cfe51d45524d1f0b04/" target="_blank" title="掘金">掘金</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">微信</p>
+  <div style="display:flex;flex-direction:column;">
+    <div>
+      <img src="./img/wx.jpg" width="300" height="300" alt="" srcset="">
+    </div>
+    <div></div>
+  </div>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer">
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,我是隔壁小陈. <br>
+			愿你每天都有收获。Good Lucky.</p>
+	</section>
+	 
+	<div class="social-font">
+		
+		<a href="http://weibo.com/6909940520" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:1724264854@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		
+		<a href="/about" target="_blank" title="小陈">小陈</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+        getSize();
+        if (myWidth >= 1024) {
+          c.click();
+        }
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

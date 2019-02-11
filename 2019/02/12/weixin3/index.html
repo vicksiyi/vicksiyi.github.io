@@ -4,25 +4,27 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
   
-    <title>SASS用法指南 | 隔壁小陈</title>
+    <title>微信小程序| ES6 箭头函数 | 隔壁小陈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小陈">
     
 
     
-    <meta name="description" content="SASS用法指南">
-<meta name="keywords" content="Sass">
+    <meta name="description" content="解决问题：在微信小程序的开发工具中，会发现里面已经有ES6语法转换ES5的设置，但是当你使用了箭头函数在里面使用this.setData会发现报错，这可能又是腾讯莫名的BUG了，建议换回ES5语法使用function(){}写法较为妥当。 1、单参数 123456function cheng(a=3)&amp;#123;　　return a*a;&amp;#125; let cheng = (a=3) =&amp;gt;">
+<meta name="keywords" content="微信小程序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SASS用法指南">
-<meta property="og:url" content="http://yoursite.com/2019/02/12/sass2/index.html">
+<meta property="og:title" content="微信小程序| ES6 箭头函数">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/weixin3/index.html">
 <meta property="og:site_name" content="隔壁小陈">
-<meta property="og:description" content="SASS用法指南">
+<meta property="og:description" content="解决问题：在微信小程序的开发工具中，会发现里面已经有ES6语法转换ES5的设置，但是当你使用了箭头函数在里面使用this.setData会发现报错，这可能又是腾讯莫名的BUG了，建议换回ES5语法使用function(){}写法较为妥当。 1、单参数 123456function cheng(a=3)&amp;#123;　　return a*a;&amp;#125; let cheng = (a=3) =&amp;gt;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-11T17:37:10.827Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190207152644298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-02-11T19:45:35.508Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SASS用法指南">
-<meta name="twitter:description" content="SASS用法指南">
+<meta name="twitter:title" content="微信小程序| ES6 箭头函数">
+<meta name="twitter:description" content="解决问题：在微信小程序的开发工具中，会发现里面已经有ES6语法转换ES5的设置，但是当你使用了箭头函数在里面使用this.setData会发现报错，这可能又是腾讯莫名的BUG了，建议换回ES5语法使用function(){}写法较为妥当。 1、单参数 123456function cheng(a=3)&amp;#123;　　return a*a;&amp;#125; let cheng = (a=3) =&amp;gt;">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190207152644298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70">
 
     
     
@@ -79,14 +81,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/02/12/sass2/" title="SASS用法指南" itemprop="url">SASS用法指南</a>
+      <a href="/2019/02/12/weixin3/" title="微信小程序| ES6 箭头函数" itemprop="url">微信小程序| ES6 箭头函数</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
 		
   </p><p class="article-time">
-    <time datetime="2019-02-11T17:36:26.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    <time datetime="2019-02-11T19:43:26.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
     
   </p>
 </header>
@@ -99,9 +101,21 @@
 		
 		</div>
 		
-		<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></li>
-</ul>
+		<p><strong>解决问题：</strong><br>在微信小程序的开发工具中，会发现里面已经有ES6语法转换ES5的设置，但是当你使用了箭头函数在里面使用this.setData会发现报错，这可能又是腾讯莫名的BUG了，建议换回ES5语法使用function(){}写法较为妥当。<br><img src="https://img-blog.csdnimg.cn/20190207152644298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>1、单参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function cheng(a=3)&#123;</span><br><span class="line">　　return a*a;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">let cheng = (a=3) =&gt; a*a;  // 箭头左边为参数  箭头右边为返回值</span><br><span class="line">console.log(cheng(9));</span><br></pre></td></tr></table></figure>
+<p>2、多参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function add(a,b)&#123;</span><br><span class="line">　　return a+b;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">let add = (a,b) =&gt; a+b;  // 默认返回值</span><br><span class="line">console.log(add(3,9));</span><br></pre></td></tr></table></figure>
+<p>3、无返回值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function add(a,b)&#123;</span><br><span class="line">　　console.log(a+b);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">let add = (a,b) =&gt; &#123;console.log(a+b)&#125;;   // 如果没有返回值，需要加&#123;&#125;</span><br><span class="line">add(3,9);</span><br></pre></td></tr></table></figure>
+<p>4、多行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function add(a,b)&#123;</span><br><span class="line">　　console.log(a+b);</span><br><span class="line">　　return a+b;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">let add = (a,b) =&gt; &#123;</span><br><span class="line">　　console.log(a+b);</span><br><span class="line">　　return a+b;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">console.log(add(3,9));</span><br></pre></td></tr></table></figure>
+<p><strong>除了简洁以外，为啥需要改变原来的习惯去使用箭头函数？</strong></p>
+<p>它对this的处理与一般的普通函数不一样，箭头函数的this始终指向函数定义时的this,而非执行时</p>
+<p><strong>例如</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">　　x:1,</span><br><span class="line">　　func: function()&#123; console.log(this.x) &#125;,  // 此处的 this 代表 obj</span><br><span class="line">　　test: function()&#123;</span><br><span class="line">　　　　setTimeout(function()&#123;</span><br><span class="line">　　　　　　alert(this);  // 因为使用了异步,在运行过程中，this发生了指针转移，不再指向obj,而是指向全局 Window对象</span><br><span class="line">　　　　　　// [object Window]</span><br><span class="line">　　　　　　this.func();</span><br><span class="line">　　　　&#125;,1000);</span><br><span class="line">　　&#125;</span><br><span class="line">&#125;;、</span><br><span class="line">obj.test(); </span><br><span class="line"></span><br><span class="line">//报错</span><br><span class="line"> // TypeError: this.func is not a function</span><br></pre></td></tr></table></figure>
+<p>箭头函数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">　　x: 1,</span><br><span class="line">　　func: function()&#123; console.log(this.x) &#125;,</span><br><span class="line">　　test: function()&#123;</span><br><span class="line">　　　　setTimeout(() =&gt; &#123;</span><br><span class="line">　　　　　　alert(this); // [object Object]  此处的this指向obj</span><br><span class="line">　　　　　　this.func();</span><br><span class="line">　　　　&#125;,1000);</span><br><span class="line">　　&#125;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line">obj.test();  // 这回this就指向obj了</span><br></pre></td></tr></table></figure>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -110,7 +124,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Sass/">Sass</a>
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
   </div>
 
 </div>
@@ -119,7 +133,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2019/02/12/sass2/" data-title="SASS用法指南 | 隔壁小陈" data-tsina="" class="share clearfix">
+	  <div data-url="http://yoursite.com/2019/02/12/weixin3/" data-title="微信小程序| ES6 箭头函数 | 隔壁小陈" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -133,18 +147,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev">
- <a href="/2019/02/12/html1/" title="HTML5 | Application Cache">
+ <a href="/2019/02/12/weixin4/" title="微信小程序 | template">
   <strong>上一篇：</strong><br>
   <span>
-  HTML5 | Application Cache</span>
+  微信小程序 | template</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2019/02/12/sass1/" title="Sass | 今天有感">
+<a href="/2019/02/12/weixin2/" title="微信小程序 | promise（上）">
  <strong>下一篇：</strong><br> 
- <span>Sass | 今天有感
+ <span>微信小程序 | promise（上）
 </span>
 </a>
 </div>

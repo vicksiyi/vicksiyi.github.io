@@ -4,25 +4,25 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
   
-    <title>SASS用法指南 | 隔壁小陈</title>
+    <title>Canvas 和 SVG的不同点 | 隔壁小陈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小陈">
     
 
     
-    <meta name="description" content="SASS用法指南">
-<meta name="keywords" content="Sass">
+    <meta name="description" content="刚刚才发现原来Canvas跟SVG是可以对比的！！！ SVGSVG 是一种使用 XML 描述 2D 图形的语言。SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。  不依赖分辨率 支持事件处理器 最适合带有大型渲染">
+<meta name="keywords" content="HTML5">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SASS用法指南">
-<meta property="og:url" content="http://yoursite.com/2019/02/12/sass2/index.html">
+<meta property="og:title" content="Canvas 和 SVG的不同点">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/html4/index.html">
 <meta property="og:site_name" content="隔壁小陈">
-<meta property="og:description" content="SASS用法指南">
+<meta property="og:description" content="刚刚才发现原来Canvas跟SVG是可以对比的！！！ SVGSVG 是一种使用 XML 描述 2D 图形的语言。SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。  不依赖分辨率 支持事件处理器 最适合带有大型渲染">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-11T17:37:10.827Z">
+<meta property="og:updated_time" content="2019-02-11T19:39:31.557Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SASS用法指南">
-<meta name="twitter:description" content="SASS用法指南">
+<meta name="twitter:title" content="Canvas 和 SVG的不同点">
+<meta name="twitter:description" content="刚刚才发现原来Canvas跟SVG是可以对比的！！！ SVGSVG 是一种使用 XML 描述 2D 图形的语言。SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。  不依赖分辨率 支持事件处理器 最适合带有大型渲染">
 
     
     
@@ -79,14 +79,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/02/12/sass2/" title="SASS用法指南" itemprop="url">SASS用法指南</a>
+      <a href="/2019/02/12/html4/" title="Canvas 和 SVG的不同点" itemprop="url">Canvas 和 SVG的不同点</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
 		
   </p><p class="article-time">
-    <time datetime="2019-02-11T17:36:26.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    <time datetime="2019-02-11T19:36:42.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
     
   </p>
 </header>
@@ -95,13 +95,27 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#SVG"><span class="toc-number">1.</span> <span class="toc-text">SVG</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas"><span class="toc-number">2.</span> <span class="toc-text">Canvas</span></a></li></ol>
 		
 		</div>
 		
-		<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></li>
-</ul>
+		<p>刚刚才发现原来Canvas跟SVG是可以对比的！！！</p>
+<h2 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h2><p>SVG 是一种使用 XML 描述 2D 图形的语言。<br>SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。<br>在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。</p>
+<ol>
+<li>不依赖分辨率</li>
+<li>支持事件处理器</li>
+<li>最适合带有大型渲染区域的应用程序（比如谷歌地图）</li>
+<li>复杂度高会减慢渲染速度（任何过度使用 DOM 的应用都不快）</li>
+<li>不适合游戏应用</li>
+</ol>
+<h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><p>Canvas 通过 JavaScript 来绘制 2D 图形。<br>Canvas 是逐像素进行渲染的。<br>在 canvas 中，一旦图形被绘制完成，它就不会继续得到浏览器的关注。如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象。</p>
+<ol>
+<li>依赖分辨率</li>
+<li>不支持事件处理器</li>
+<li>弱的文本渲染能力</li>
+<li>能够以 .png 或 .jpg 格式保存结果图像</li>
+<li>最适合图像密集型的游戏，其中的许多对象会被频繁重绘</li>
+</ol>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -110,7 +124,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Sass/">Sass</a>
+  <span></span> <a href="/tags/HTML5/">HTML5</a>
   </div>
 
 </div>
@@ -119,7 +133,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2019/02/12/sass2/" data-title="SASS用法指南 | 隔壁小陈" data-tsina="" class="share clearfix">
+	  <div data-url="http://yoursite.com/2019/02/12/html4/" data-title="Canvas 和 SVG的不同点 | 隔壁小陈" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -133,18 +147,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev">
- <a href="/2019/02/12/html1/" title="HTML5 | Application Cache">
+ <a href="/2019/02/12/html5/" title="MIME Type 多功能网际邮件扩充协议">
   <strong>上一篇：</strong><br>
   <span>
-  HTML5 | Application Cache</span>
+  MIME Type 多功能网际邮件扩充协议</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2019/02/12/sass1/" title="Sass | 今天有感">
+<a href="/2019/02/12/html6/" title="html6">
  <strong>下一篇：</strong><br> 
- <span>Sass | 今天有感
+ <span>html6
 </span>
 </a>
 </div>
@@ -161,7 +175,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#SVG"><span class="toc-number">1.</span> <span class="toc-text">SVG</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas"><span class="toc-number">2.</span> <span class="toc-text">Canvas</span></a></li></ol>
  
   </div>
 

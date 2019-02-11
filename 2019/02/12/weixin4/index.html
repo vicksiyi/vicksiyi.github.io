@@ -4,25 +4,25 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
   
-    <title>SASS用法指南 | 隔壁小陈</title>
+    <title>微信小程序 | template | 隔壁小陈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小陈">
     
 
     
-    <meta name="description" content="SASS用法指南">
-<meta name="keywords" content="Sass">
+    <meta name="description" content="模板template的使用如下图，我们经常做这样的列表页，课程搜索结果页和课程列表页结构是完全一样的，非常适合使用模板来完成页面搭建。 这样我们就不用写那些重复的代码了,而且修改界面的时候也只需要改动模板一个地方 一、定义模板1、新建一个template文件夹用来管理项目中所有的模板；2、新建一个personCourseTmp.wxml文件来定义模板；  3、使用name属性，作为模板的名字。然后">
+<meta name="keywords" content="微信小程序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SASS用法指南">
-<meta property="og:url" content="http://yoursite.com/2019/02/12/sass2/index.html">
+<meta property="og:title" content="微信小程序 | template">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/weixin4/index.html">
 <meta property="og:site_name" content="隔壁小陈">
-<meta property="og:description" content="SASS用法指南">
+<meta property="og:description" content="模板template的使用如下图，我们经常做这样的列表页，课程搜索结果页和课程列表页结构是完全一样的，非常适合使用模板来完成页面搭建。 这样我们就不用写那些重复的代码了,而且修改界面的时候也只需要改动模板一个地方 一、定义模板1、新建一个template文件夹用来管理项目中所有的模板；2、新建一个personCourseTmp.wxml文件来定义模板；  3、使用name属性，作为模板的名字。然后">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-11T17:37:10.827Z">
+<meta property="og:updated_time" content="2019-02-11T19:46:03.966Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SASS用法指南">
-<meta name="twitter:description" content="SASS用法指南">
+<meta name="twitter:title" content="微信小程序 | template">
+<meta name="twitter:description" content="模板template的使用如下图，我们经常做这样的列表页，课程搜索结果页和课程列表页结构是完全一样的，非常适合使用模板来完成页面搭建。 这样我们就不用写那些重复的代码了,而且修改界面的时候也只需要改动模板一个地方 一、定义模板1、新建一个template文件夹用来管理项目中所有的模板；2、新建一个personCourseTmp.wxml文件来定义模板；  3、使用name属性，作为模板的名字。然后">
 
     
     
@@ -79,14 +79,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/02/12/sass2/" title="SASS用法指南" itemprop="url">SASS用法指南</a>
+      <a href="/2019/02/12/weixin4/" title="微信小程序 | template" itemprop="url">微信小程序 | template</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
 		
   </p><p class="article-time">
-    <time datetime="2019-02-11T17:36:26.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    <time datetime="2019-02-11T19:43:30.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
     
   </p>
 </header>
@@ -95,13 +95,34 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#模板template的使用"><span class="toc-number">1.</span> <span class="toc-text">模板template的使用</span></a></li></ol>
 		
 		</div>
 		
-		<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></li>
-</ul>
+		<h2 id="模板template的使用"><a href="#模板template的使用" class="headerlink" title="模板template的使用"></a>模板template的使用</h2><p>如下图，我们经常做这样的列表页，课程搜索结果页和课程列表页结构是完全一样的，非常适合使用模板来完成页面搭建。</p>
+<p>这样我们就不用写那些重复的代码了,而且修改界面的时候也只需要改动模板一个地方</p>
+<p>一、定义模板<br>1、新建一个template文件夹用来管理项目中所有的模板；<br>2、新建一个personCourseTmp.wxml文件来定义模板； </p>
+<p>3、使用name属性，作为模板的名字。然后在<template>内定义代码片段。</template></p>
+<p>那我们开始实现吧,建模板2个文件</p>
+<p>personCourseTmp.wxml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;template name=&quot;personCourseItemTmp&quot;&gt;</span><br><span class="line">  &lt;view class=&quot;courses-list&quot; style=&apos;background-image: url(&quot;&#123;&#123;cardImage&#125;&#125;&quot;)&apos;&gt;</span><br><span class="line"> </span><br><span class="line">    &lt;view class=&quot;money-border&quot;&gt; ￥</span><br><span class="line">    &lt;text class=&quot;money&quot;&gt;&#123;&#123;cardMoney&#125;&#125;&lt;/text&gt;/课时&lt;/view&gt;</span><br><span class="line"> </span><br><span class="line">    &lt;view class=&quot;name&quot;&gt;</span><br><span class="line">       &lt;text class=&quot;ename&quot;&gt;GillMo&lt;/text&gt;</span><br><span class="line">       &lt;text class=&quot;cname&quot;&gt;.小川&lt;/text&gt;</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line"> </span><br><span class="line">    &lt;view class=&quot;mark&quot;&gt;</span><br><span class="line">      &lt;view&gt;&#123;&#123;cardMark&#125;&#125;&lt;/view&gt;</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">    </span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+<p>样式文件personCourseTmp.wxss</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">.courses-list &#123;</span><br><span class="line">  height: 342rpx;</span><br><span class="line">  margin: 40rpx auto;</span><br><span class="line">  border-top: 2rpx solid #f0f0f0;</span><br><span class="line">  margin-top: 10rpx;</span><br><span class="line">   flex-direction: column;</span><br><span class="line">  align-items: flex-start;</span><br><span class="line">  width: 670rpx;</span><br><span class="line">  border-radius: 8px;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.money-border &#123;</span><br><span class="line">  font-family: PingFangSC-Semibold;</span><br><span class="line">  font-size: 28rpx;</span><br><span class="line">  color: #fff;</span><br><span class="line">  letter-spacing: -0.41px;</span><br><span class="line">  height: 56rpx;</span><br><span class="line">  margin-top: 20rpx;</span><br><span class="line">  margin-left: 20rpx;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.money &#123;</span><br><span class="line">  font-size: 40rpx;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.name &#123;</span><br><span class="line">  margin-top: 158rpx;</span><br><span class="line">  margin-left: 20rpx;</span><br><span class="line">  font-family: PingFangSC-Semibold;</span><br><span class="line">  color: #fff;</span><br><span class="line">  letter-spacing: -0.41px;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.ename &#123;</span><br><span class="line">  font-size: 40rpx;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.cname &#123;</span><br><span class="line">  font-size: 30rpx;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.mark &#123;</span><br><span class="line">  font-family: PingFangSC-Regular;</span><br><span class="line">  font-size: 28rpx;</span><br><span class="line">  color: #fff;</span><br><span class="line">  margin-left: 20rpx;</span><br><span class="line">  letter-spacing: -0.41px;</span><br><span class="line">  margin-bottom: 18rpx;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>那我们如何在页面上使用呢,引入样式文件和视图文件</p>
+<p>比如我们要在Course.wxss上面引入样式文件</p>
+<blockquote>
+<p>@import “../template/personCourseTmp.wxss”;</p>
+</blockquote>
+<p>只需要在Course.wxss里面加入上面的代码</p>
+<p>我们要在Course.wxml上面引入视图文件</p>
+<blockquote>
+<p> &lt; import src=”../template/personCourseTmp.wxml” /&gt;</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;block wx:for=&quot;&#123;&#123;goodlist&#125;&#125;&quot; wx:key=&quot;idx&quot;&gt;</span><br><span class="line">    &lt;template is=&quot;personCourseItemTmp&quot; data=&quot;&#123;&#123;...item&#125;&#125;&quot;&gt;&lt;/template&gt;</span><br><span class="line">  &lt;/navigator&gt;</span><br><span class="line">&lt;/block&gt;</span><br></pre></td></tr></table></figure>
+<p>传数据时item前面加三个点… 模板里面就不需要写item了,</p>
+<p>如果要传多个数据到模板</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class=&quot;tab-list&quot; wx:for=&quot;&#123;&#123;list&#125;&#125;&quot; wx:key=&quot;index&quot;&gt;</span><br><span class="line">          &lt;template is=&quot;day-tab&quot; data=&quot;&#123;&#123;item,index:index,currentTarget:currentTarget&#125;&#125;&quot; wx:key=&quot;index&quot;&gt;&lt;/template&gt;</span><br><span class="line"> &lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<p>用逗号分开,item 是对象,index是单个数据,要用键值对,template就介绍到这来</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -110,7 +131,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Sass/">Sass</a>
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
   </div>
 
 </div>
@@ -119,7 +140,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2019/02/12/sass2/" data-title="SASS用法指南 | 隔壁小陈" data-tsina="" class="share clearfix">
+	  <div data-url="http://yoursite.com/2019/02/12/weixin4/" data-title="微信小程序 | template | 隔壁小陈" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -133,18 +154,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev">
- <a href="/2019/02/12/html1/" title="HTML5 | Application Cache">
+ <a href="/2019/02/12/weixin5/" title="微信小程序 | 模板消息">
   <strong>上一篇：</strong><br>
   <span>
-  HTML5 | Application Cache</span>
+  微信小程序 | 模板消息</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2019/02/12/sass1/" title="Sass | 今天有感">
+<a href="/2019/02/12/weixin3/" title="微信小程序| ES6 箭头函数">
  <strong>下一篇：</strong><br> 
- <span>Sass | 今天有感
+ <span>微信小程序| ES6 箭头函数
 </span>
 </a>
 </div>
@@ -161,7 +182,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#模板template的使用"><span class="toc-number">1.</span> <span class="toc-text">模板template的使用</span></a></li></ol>
  
   </div>
 

@@ -4,25 +4,25 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
   
-    <title>SASS用法指南 | 隔壁小陈</title>
+    <title>update之微信小程序BUG | 隔壁小陈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小陈">
     
 
     
-    <meta name="description" content="SASS用法指南">
-<meta name="keywords" content="Sass">
+    <meta name="description" content="今天在赶着一个项目，突然发现小程序之中使用update不行。数据不能更新这就是我的代码： 123456789101112131415161718192021222324252627282930313233343536const db = wx.cloud.database()    const _ = db.command    // 1、首先看xxx集合里面有没有存在这个人    db.coll">
+<meta name="keywords" content="微信小程序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SASS用法指南">
-<meta property="og:url" content="http://yoursite.com/2019/02/12/sass2/index.html">
+<meta property="og:title" content="update之微信小程序BUG">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/weixin7/index.html">
 <meta property="og:site_name" content="隔壁小陈">
-<meta property="og:description" content="SASS用法指南">
+<meta property="og:description" content="今天在赶着一个项目，突然发现小程序之中使用update不行。数据不能更新这就是我的代码： 123456789101112131415161718192021222324252627282930313233343536const db = wx.cloud.database()    const _ = db.command    // 1、首先看xxx集合里面有没有存在这个人    db.coll">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-11T17:37:10.827Z">
+<meta property="og:updated_time" content="2019-02-11T19:47:30.719Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SASS用法指南">
-<meta name="twitter:description" content="SASS用法指南">
+<meta name="twitter:title" content="update之微信小程序BUG">
+<meta name="twitter:description" content="今天在赶着一个项目，突然发现小程序之中使用update不行。数据不能更新这就是我的代码： 123456789101112131415161718192021222324252627282930313233343536const db = wx.cloud.database()    const _ = db.command    // 1、首先看xxx集合里面有没有存在这个人    db.coll">
 
     
     
@@ -79,14 +79,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/02/12/sass2/" title="SASS用法指南" itemprop="url">SASS用法指南</a>
+      <a href="/2019/02/12/weixin7/" title="update之微信小程序BUG" itemprop="url">update之微信小程序BUG</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
 		
   </p><p class="article-time">
-    <time datetime="2019-02-11T17:36:26.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    <time datetime="2019-02-11T19:43:54.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
     
   </p>
 </header>
@@ -99,9 +99,14 @@
 		
 		</div>
 		
-		<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></li>
-</ul>
+		<p>今天在赶着一个项目，突然发现小程序之中使用update不行。数据不能更新<br>这就是我的代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">const db = wx.cloud.database()</span><br><span class="line">    const _ = db.command</span><br><span class="line">    // 1、首先看xxx集合里面有没有存在这个人</span><br><span class="line">    db.collection(&apos;xxx&apos;).where(&#123;</span><br><span class="line">      shId: res.currentTarget.dataset.xinxi._openid</span><br><span class="line">    &#125;).get(&#123;</span><br><span class="line">      success: function(e) &#123;</span><br><span class="line">        // 2、没有的话add一个用户</span><br><span class="line">        if (e.data.length == 0) &#123;</span><br><span class="line">          db.collection(&apos;jifen&apos;).add(&#123;</span><br><span class="line">            data: &#123;</span><br><span class="line">              ~~~~~~~~~~~~~~~</span><br><span class="line">            &#125;,</span><br><span class="line">            // 添加成功、然后修改审核里面的东西</span><br><span class="line">            success(al) &#123;</span><br><span class="line">              db.collection(xxx).where(&#123;</span><br><span class="line">              ~~~~~~~~~~~~~~~~~~</span><br><span class="line">              &#125;).update(&#123;</span><br><span class="line">                data: &#123;</span><br><span class="line">                  ~~~</span><br><span class="line">                &#125;,</span><br><span class="line">                // 失败的话，直接showToast/成功跳转到原页面</span><br><span class="line">                success(value2) &#123;</span><br><span class="line">                  if (value2.stats.updated == 0) &#123;</span><br><span class="line">                 ~~~</span><br><span class="line">                  &#125; else &#123;</span><br><span class="line">                    ~~~</span><br><span class="line">                  &#125;</span><br><span class="line">                &#125;</span><br><span class="line">              &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;)</span><br><span class="line">          //3、存在这个用户，直接去更新里面的数据 </span><br><span class="line">        &#125; else &#123;</span><br><span class="line">        ~~~</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+<p>结果当然是更新不了数据呀~</p>
+<p>以下看了<a href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/update.html" target="_blank" rel="noopener">官网</a>只有自己的理解：<br>where适用于对于集合的更新，对于单条数据并没有作用<br>所以做出了一下修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">const db = wx.cloud.database()</span><br><span class="line">    const _ = db.command</span><br><span class="line">    // 1、首先看xxx集合里面有没有存在这个人</span><br><span class="line">    db.collection(&apos;xxx&apos;).where(&#123;</span><br><span class="line">      shId: res.currentTarget.dataset.xinxi._openid</span><br><span class="line">    &#125;).get(&#123;</span><br><span class="line">      success: function(e) &#123;</span><br><span class="line">        // 2、没有的话add一个用户</span><br><span class="line">        if (e.data.length == 0) &#123;</span><br><span class="line">          db.collection(&apos;jifen&apos;).add(&#123;</span><br><span class="line">            data: &#123;</span><br><span class="line">              ~~~~~~~~~~~~~~~</span><br><span class="line">            &#125;,</span><br><span class="line">            // 添加成功、然后修改审核里面的东西</span><br><span class="line">            success(al) &#123;</span><br><span class="line">              db.collection(xxx).doc(_id).update(&#123;</span><br><span class="line">                data: &#123;</span><br><span class="line">                  ~~~</span><br><span class="line">                &#125;,</span><br><span class="line">                // 失败的话，直接showToast/成功跳转到原页面</span><br><span class="line">                success(value2) &#123;</span><br><span class="line">                  if (value2.stats.updated == 0) &#123;</span><br><span class="line">                 ~~~</span><br><span class="line">                  &#125; else &#123;</span><br><span class="line">                    ~~~</span><br><span class="line">                  &#125;</span><br><span class="line">                &#125;</span><br><span class="line">              &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;)</span><br><span class="line">          //3、存在这个用户，直接去更新里面的数据 </span><br><span class="line">        &#125; else &#123;</span><br><span class="line">        ~~~</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+<p>解析</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">db.collection(&apos;todos&apos;).doc(&apos;todo-identifiant-aleatoire&apos;).update(&#123;</span><br><span class="line">  // data 传入需要局部更新的数据</span><br><span class="line">  data: &#123;</span><br><span class="line">    // 表示将 done 字段置为 true</span><br><span class="line">    done: true</span><br><span class="line">  &#125;,</span><br><span class="line">  success(res) &#123;</span><br><span class="line">    console.log(res.data)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>问题成功解决，数据修改成功</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -110,7 +115,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Sass/">Sass</a>
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
   </div>
 
 </div>
@@ -119,7 +124,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2019/02/12/sass2/" data-title="SASS用法指南 | 隔壁小陈" data-tsina="" class="share clearfix">
+	  <div data-url="http://yoursite.com/2019/02/12/weixin7/" data-title="update之微信小程序BUG | 隔壁小陈" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -133,18 +138,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev">
- <a href="/2019/02/12/html1/" title="HTML5 | Application Cache">
+ <a href="/2019/02/12/weixin8/" title="微信小程序 | UI框架&amp;组件库">
   <strong>上一篇：</strong><br>
   <span>
-  HTML5 | Application Cache</span>
+  微信小程序 | UI框架&amp;组件库</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2019/02/12/sass1/" title="Sass | 今天有感">
+<a href="/2019/02/12/weixin6/" title="微信小程序 | WeUI">
  <strong>下一篇：</strong><br> 
- <span>Sass | 今天有感
+ <span>微信小程序 | WeUI
 </span>
 </a>
 </div>

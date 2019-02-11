@@ -1,0 +1,578 @@
+
+ <!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  
+    <title>微信小程序 | 模板消息 | 隔壁小陈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="小陈">
+    
+
+    
+    <meta name="description" content="1.传统方式实现模板消息1、获取openId 2、获取模板ID 有两个方法可以获取模版ID  通过模版消息管理接口获取模版ID 在微信公众平台手动配置获取模版ID  登录https://mp.weixin.qq.com 获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用 3、获取access_token access_token 的有效期目前为2个小时，需定时刷新，重复获取将导致上">
+<meta name="keywords" content="微信小程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信小程序 | 模板消息">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/weixin5/index.html">
+<meta property="og:site_name" content="隔壁小陈">
+<meta property="og:description" content="1.传统方式实现模板消息1、获取openId 2、获取模板ID 有两个方法可以获取模版ID  通过模版消息管理接口获取模版ID 在微信公众平台手动配置获取模版ID  登录https://mp.weixin.qq.com 获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用 3、获取access_token access_token 的有效期目前为2个小时，需定时刷新，重复获取将导致上">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://img-blog.csdn.net/20180126212459841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFveHVuamk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2019-02-11T19:46:34.008Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="微信小程序 | 模板消息">
+<meta name="twitter:description" content="1.传统方式实现模板消息1、获取openId 2、获取模板ID 有两个方法可以获取模版ID  通过模版消息管理接口获取模版ID 在微信公众平台手动配置获取模版ID  登录https://mp.weixin.qq.com 获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用 3、获取access_token access_token 的有效期目前为2个小时，需定时刷新，重复获取将导致上">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20180126212459841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFveHVuamk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="隔壁小陈" title="隔壁小陈"></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="隔壁小陈">隔壁小陈</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">时间轴</a></li>
+					
+						<li><a href="/about">关于小陈</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="https://www.baidu.com/s" target="_blank">
+							<label>Search</label>
+						<input name="s" type="hidden" value=""><input type="text" name="q" size="30" placeholder="搜索"><br>
+						</form>
+					
+					</li>
+				</ul>
+			</ul></nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope="" itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/weixin5/" title="微信小程序 | 模板消息" itemprop="url">微信小程序 | 模板消息</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:43:35.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-传统方式实现模板消息"><span class="toc-number">1.</span> <span class="toc-text">1.传统方式实现模板消息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、基于Bmob后端云的模板消息实现"><span class="toc-number">2.</span> <span class="toc-text">2、基于Bmob后端云的模板消息实现</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="1-传统方式实现模板消息"><a href="#1-传统方式实现模板消息" class="headerlink" title="1.传统方式实现模板消息"></a>1.传统方式实现模板消息</h2><p>1、<strong>获取openId</strong></p>
+<p>2、<strong>获取模板ID</strong></p>
+<p><em>有两个方法可以获取模版ID</em></p>
+<ul>
+<li>通过模版消息管理接口获取模版ID</li>
+<li>在微信公众平台手动配置获取模版ID</li>
+</ul>
+<p>登录<a href="https://mp.weixin.qq.com" target="_blank" rel="noopener">https://mp.weixin.qq.com</a> 获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用</p>
+<p>3、<strong>获取access_token</strong></p>
+<p>access_token 的有效期目前为2个小时，需定时刷新，重复获取将导致上次获取的 access_token 失效</p>
+<p>公众平台的 API 调用所需的 access_token 的使用及生成方式说明：</p>
+<blockquote>
+<p> <strong>1.</strong> 为了保密 appsecrect，第三方需要一个 access_token 获取和刷新的中控服务器。而其他业务逻辑服务器所使用的access_token 均来自于该中控服务器，不应该各自去刷新，否则会造成 access_token 覆盖而影响业务；<br><strong>2.</strong> 目前 access_token 的有效期通过返回的 expires_in来传达，目前是7200秒之内的值。中控服务器需要根据这个有效时间提前去刷新新access_token。在刷新过程中，中控服务器对外输出的依然是老access_token，此时公众平台后台会保证在刷新短时间内，新老 access_token 都可用，这保证了第三方业务的平滑过渡；<br><strong>3.</strong> access_token 的有效时间可能会在未来有调整，所以中控服务器不仅需要内部定时主动刷新，还需要提供被动刷新access_token 的接口，这样便于业务服务器在 API 调用获知 access_token 已超时的情况下，可以触发access_token 的刷新流程。</p>
+</blockquote>
+<p>开发者可以使用 AppID 和 AppSecret 调用本接口来获取 access_token。AppID 和 AppSecret 可登录微信公众平台官网-设置-开发设置中获得（需要已经绑定成为开发者，且帐号没有异常状态）。AppSecret 生成后请自行保存，因为在公众平台每次生成查看都会导致 AppSecret 被重置。注意调用所有微信接口时均需使用 https 协议。如果第三方不使用中控服务器，而是选择各个业务逻辑点各自去刷新 access_token，那么就可能会产生冲突，导致服务不稳定</p>
+<p><strong>以上内容是微信开发文档给出的access_token的说明，总的来说就是两点</strong></p>
+<p>（1）access_token是发送模板消息的凭证，需要用微信小程序的AppID 和AppSecret 调用接口来获取，有效时间为2小时<br>（2）如果在此获取access_token则会导致前一个access_token失效，有多个公众号和小程序的开发者一定要注意这一点！</p>
+<p>接口地址：</p>
+<blockquote>
+<p><a href="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET" target="_blank" rel="noopener">https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET</a></p>
+</blockquote>
+<blockquote>
+<p>GET请求</p>
+</blockquote>
+<p>参数说明 :<br>|  参数|必填  | 说明|<br>|–|–| –|<br>| grant_type | 是  | 获取 access_token 填写 client_credential |<br>| appid | 是  | 第三方用户唯一凭证 |<br>| secret | 是  | 第三方用户唯一凭证密钥，即appsecret |</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function onRequest(request, response, modules) &#123;</span><br><span class="line">var http = modules.oHttp;</span><br><span class="line">//发起Get请求</span><br><span class="line">http(&apos;https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=XXX&amp;secret=XXX&apos;, function (error, res, body) &#123;</span><br><span class="line">    response.send(body);</span><br><span class="line">&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Response Body</span><br><span class="line">                             &#123;</span><br><span class="line">                             &quot;code&quot;: 200,</span><br><span class="line">                             &quot;msg&quot;:</span><br><span class="line">                             &#123;&quot;access_token&quot;:&quot;6_R8kOFxRLeRtWOq_haIU29XB0hbAoKxFGRqQTZt_HhzCSEvT_xDJ4WLgf9A_dt2pRTCugfUk7IkxR2sfu5zckCwKKWEghCtqlrrQlhdJmCxmkBAaDEdW7AU98D23rUJO5PYruNYOLQ3cpH3iAVTNiADAECW&quot;,&quot;expires_in&quot;:7200&#125;</span><br><span class="line">                             &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>发送模板消息</strong><br>接口地址：(ACCESS_TOKEN 需换成上文获取到的 access_token)</p>
+<blockquote>
+<p><a href="https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=ACCESS_TOKEN" target="_blank" rel="noopener">https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=ACCESS_TOKEN</a></p>
+</blockquote>
+<blockquote>
+<p>POST请求</p>
+</blockquote>
+<p>POST参数说明：<br>|  参数|必填  | 说明|<br>|–|–| –|<br>| touser | 是  | 接收者（用户）的 openid |<br>| template_id | 是  | 所需下发的模板消息的id |<br>| page | 否  | 点击模板卡片后的跳转页面，仅限本小程序内的页面。支持带参数,（示例index?foo=bar）。该字段不填则模板无跳转。 |<br>| form_id | 是  | 表单提交场景下，为 submit 事件带上的 formId；支付场景下，为本次支付的 prepay_id |<br>| data | 是  | 模板内容，不填则下发空模板 |<br>| color| 否  | 模板内容字体的颜色，不填默认黑色 |<br>| emphasis_keyword| 否  | 模板需要放大的关键词，不填则默认无放大 |</p>
+<p>formid说明：页面的 <form> 组件，属性report-submit为true时，可以声明为需发模板消息，此时点击按钮提交表单可以获取formId</form></p>
+<p>代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var temp = &#123;</span><br><span class="line">&quot;touser&quot;: touser,//用户的openid</span><br><span class="line">&quot;template_id&quot;: template_id,//模板id</span><br><span class="line">&quot;page&quot;: &quot;&quot;,</span><br><span class="line">&quot;form_id&quot;: formid,//表单id</span><br><span class="line">&quot;data&quot;: &#123;</span><br><span class="line">&quot;keyword1&quot;: &#123;</span><br><span class="line">&quot;value&quot;: title,</span><br><span class="line">&quot;color&quot;: &quot;#173177&quot;</span><br><span class="line">&#125;,</span><br><span class="line">&quot;keyword2&quot;: &#123;</span><br><span class="line">&quot;value&quot;: gettime()</span><br><span class="line">&#125;,</span><br><span class="line">&#125;,</span><br><span class="line">&quot;emphasis_keyword&quot;: &quot;keyword1.DATA&quot; //将keyword1放大</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>测试效果：<br><img src="https://img-blog.csdn.net/20180126212459841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFveHVuamk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="在这里插入图片描述"></p>
+<h2 id="2、基于Bmob后端云的模板消息实现"><a href="#2、基于Bmob后端云的模板消息实现" class="headerlink" title="2、基于Bmob后端云的模板消息实现"></a>2、基于Bmob后端云的模板消息实现</h2><p>第一种方法实现起来过于繁琐，在使用过程中也要中间服务器的帮助，如果没有中间服务器，或者服务器端的代码不太熟悉，那么Bmob后端云则可以帮助你实现你要的功能</p>
+<p>只需要下载按照官网文档在小程序内初始化好Bmob，那么就可以调用Bmob模板消息的方法，如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">function send(title, formid, touser)&#123;</span><br><span class="line">  var Bmob = require(&apos;bmob.js&apos;);</span><br><span class="line">  var temp = &#123;</span><br><span class="line">    &quot;touser&quot;: touser,</span><br><span class="line">    &quot;template_id&quot;: &quot;ClYq9lc8bZh26uM993NNIknasAVBdk0wSYnDrkClK40&quot;,</span><br><span class="line">    &quot;page&quot;: &quot;&quot;,</span><br><span class="line">    &quot;form_id&quot;: formid,</span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line">      &quot;keyword1&quot;: &#123;</span><br><span class="line">        &quot;value&quot;: title,</span><br><span class="line">        &quot;color&quot;: &quot;#173177&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">      &quot;keyword2&quot;: &#123;</span><br><span class="line">        &quot;value&quot;: gettime()</span><br><span class="line">      &#125;,</span><br><span class="line"> </span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;emphasis_keyword&quot;: &quot;keyword1.DATA&quot;</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line">  Bmob.sendMessage(temp).then(function (obj) &#123;</span><br><span class="line">    console.log(&apos;发送成功&apos;);</span><br><span class="line">  &#125;,</span><br><span class="line">    function (err) &#123;</span><br><span class="line">      common.showTip(&apos;失败&apos; + err)</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样模板消息就解决了！！！</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2019/02/12/weixin5/" data-title="微信小程序 | 模板消息 | 隔壁小陈" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev">
+ <a href="/2019/02/12/weixin6/" title="微信小程序 | WeUI">
+  <strong>上一篇：</strong><br>
+  <span>
+  微信小程序 | WeUI</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2019/02/12/weixin4/" title="微信小程序 | template">
+ <strong>下一篇：</strong><br> 
+ <span>微信小程序 | template
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-传统方式实现模板消息"><span class="toc-number">1.</span> <span class="toc-text">1.传统方式实现模板消息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、基于Bmob后端云的模板消息实现"><span class="toc-number">2.</span> <span class="toc-text">2、基于Bmob后端云的模板消息实现</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/微信小程序/" title="微信小程序">微信小程序<sup>8</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/HTML5/" title="HTML5">HTML5<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Sass/" title="Sass">Sass<sup>2</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://momentjs.com/" target="_blank" title="Moment">Moment</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://www.inoreader.com/" target="_blank" title="inoreader">inoreader</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://gulpjs.com/" target="_blank" title="Gulp">Gulp</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ruanyifeng.com/blog/" target="_blank" title="阮一峰官网">阮一峰官网</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://www.easyswoole.com/" target="_blank" title="EasySwoole">EasySwoole</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="linkslist">
+  <p class="asidetitle">其他博客</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://me.csdn.net/weixin_41593408/" target="_blank" title="CSDN">CSDN</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://juejin.im/user/5c4aa1cfe51d45524d1f0b04/" target="_blank" title="掘金">掘金</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">微信</p>
+  <div style="display:flex;flex-direction:column;">
+    <div>
+      <img src="./img/wx.jpg" width="300" height="300" alt="" srcset="">
+    </div>
+    <div></div>
+  </div>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer">
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,我是隔壁小陈. <br>
+			愿你每天都有收获。Good Lucky.</p>
+	</section>
+	 
+	<div class="social-font">
+		
+		<a href="http://weibo.com/6909940520" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:1724264854@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		
+		<a href="/about" target="_blank" title="小陈">小陈</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+        getSize();
+        if (myWidth >= 1024) {
+          c.click();
+        }
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

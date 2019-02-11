@@ -79,57 +79,782 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/02/12/html1/" title="HTML5 | Application Cache" itemprop="url">HTML5 | Application Cache</a>
+      <a href="/2019/02/12/weixin8/" title="微信小程序 | UI框架&amp;组件库" itemprop="url">微信小程序 | UI框架&amp;组件库</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
 		
   </p><p class="article-time">
-    <time datetime="2019-02-11T17:37:54.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    <time datetime="2019-02-11T19:43:59.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
     
   </p>
 </header>
     <div class="article-content">
         
-        <h2 id="什么是应用程序缓存（Application-Cache）？"><a href="#什么是应用程序缓存（Application-Cache）？" class="headerlink" title="什么是应用程序缓存（Application Cache）？"></a>什么是应用程序缓存（Application Cache）？</h2><p>web 应用可进行缓存，并可在没有因特网连接时进行访问。</p>
-<h2 id="三大优势："><a href="#三大优势：" class="headerlink" title="三大优势："></a>三大优势：</h2><ul>
-<li>离线浏览 - 用户可在应用离线时使用它们</li>
-<li>速度 - 已缓存资源加载得更快</li>
-<li>减少服务器负载 - 浏览器将只从服务器下载更新过或更改过的资源。</li>
-</ul>
-<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>如需启用应用程序缓存，请在文档的 <html> 标签中包含 manifest 属性：</html></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html manifest=&quot;demo.appcache&quot;&gt;</span><br><span class="line">...</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p>每个指定了 manifest 的页面在用户对其访问时都会被缓存。如果未指定 manifest 属性，则页面不会被缓存（除非在 manifest 文件中直接指定了该页面）。</p>
-<p>manifest 文件的建议的文件扩展名是：”.appcache”。</p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>manifest 文件需要配置正确的 <a href="https://blog.csdn.net/weixin_41593408/article/details/86684919" target="_blank" rel="noopener">MIME-type</a>，即 “text/cache-manifest”。必须在 web 服务器上进行配置。</p>
-<h2 id="Manifest-文件"><a href="#Manifest-文件" class="headerlink" title="Manifest 文件"></a>Manifest 文件</h2><p>manifest 文件可分为三个部分：</p>
+        <p>想要开发出一套高质量的小程序，运用框架，组件库是省时省力省心必不可少一部分，随着小程序日渐火爆，各种不同类型的小程序也渐渐更新，其中不乏一些优秀好用的框架/组件库。</p>
+<h2 id="1：WeUI-小程序–使用教程"><a href="#1：WeUI-小程序–使用教程" class="headerlink" title="1：WeUI 小程序–使用教程"></a>1：WeUI 小程序–使用教程</h2><blockquote>
+<p><a href="https://weui.io/" target="_blank" rel="noopener">https://weui.io/</a></p>
+</blockquote>
+<p>官方介绍：WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。小程序开发中最常用到的一款框架，受广大开发人员的欢迎。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-82f8e61acddff533.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="2：美团小程序框架mpvue"><a href="#2：美团小程序框架mpvue" class="headerlink" title="2：美团小程序框架mpvue"></a>2：美团小程序框架mpvue</h2><blockquote>
+<p>Github：<a href="https://github.com/Meituan-Dianping/mpvue" target="_blank" rel="noopener">https://github.com/Meituan-Dianping/mpvue</a><br>官网： <a href="http://mpvue.com/" target="_blank" rel="noopener">http://mpvue.com/</a></p>
+</blockquote>
+<p>官方介绍：mpvue是一个使用 Vue.js开发小程序的前端框架。框架基于 Vue.js核心，mpvue修改了 Vue.js的 runtime和 compiler实现，使其可以运行在小程序环境中，从而为小程序开发引入了整套Vue.js开发体验。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-8b39f4afe3d6612a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="3：组件化开发框架wepy"><a href="#3：组件化开发框架wepy" class="headerlink" title="3：组件化开发框架wepy"></a>3：组件化开发框架wepy</h2><blockquote>
+<p>Github地址: <a href="https://github.com/Tencent/wepy" target="_blank" rel="noopener">https://github.com/Tencent/wepy</a><br>官网地址： <a href="https://tencent.github.io/wepy" target="_blank" rel="noopener">https://tencent.github.io/wepy</a></p>
+</blockquote>
+<p>官方介绍：组件化开发，完美解决组件隔离，组件嵌套，组件通信等问题,支持使用第三方 npm 资源，自动处理 npm 资源之间的依赖关系，完美兼容所有无平台依赖的 npm 资源包.<br><img src="https://upload-images.jianshu.io/upload_images/5640239-1e64e4c7e2b9b121.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="4：官方框架MINA"><a href="#4：官方框架MINA" class="headerlink" title="4：官方框架MINA"></a>4：官方框架MINA</h2><blockquote>
+<p>地址：<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/MINA.html" target="_blank" rel="noopener">https://developers.weixin.qq.com/miniprogram/dev/framework/MINA.html</a></p>
+</blockquote>
+<p>官方介绍：框架提供了自己的视图层描述语言 WXML 和 WXSS，以及基于 JavaScript 的逻辑层框架，并在视图层与逻辑层间提供了数据传输和事件系统，可以让开发者可以方便的聚焦于数据与逻辑上。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-7918b16afedbcec1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="5：Tina-js-一款轻巧的渐进式微信小程序框架"><a href="#5：Tina-js-一款轻巧的渐进式微信小程序框架" class="headerlink" title="5：Tina.js 一款轻巧的渐进式微信小程序框架"></a>5：Tina.js 一款轻巧的渐进式微信小程序框架</h2><blockquote>
+<p>Tina.js 开源框架地址： <a href="https://github.com/tinajs/tina" target="_blank" rel="noopener">https://github.com/tinajs/tina</a></p>
+</blockquote>
+<p>官方介绍：是一款轻巧的渐进式微信小程序框架，保留 MINA (微信小程序官方框架) 的大部分 API 设计；无论你有无小程序开发经验，都可以轻松过渡上手。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-3e05e476102e9576.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="6：前端框架weweb"><a href="#6：前端框架weweb" class="headerlink" title="6：前端框架weweb"></a>6：前端框架weweb</h2><blockquote>
+<p>地址: <a href="https://github.com/wdfe/weweb" target="_blank" rel="noopener">https://github.com/wdfe/weweb</a></p>
+</blockquote>
+<p>官方介绍：weweb是一个兼容小程序语法的前端框架，你可以用小程序的写法，来写web应用。如果你已经有小程序了，通过它你可以将你的小程序运行在浏览器中。</p>
+<h2 id="7：微信UI组件库-iView-Weapp"><a href="#7：微信UI组件库-iView-Weapp" class="headerlink" title="7：微信UI组件库 iView Weapp"></a>7：微信UI组件库 iView Weapp</h2><blockquote>
+<p><a href="https://weapp.iviewui.com/" target="_blank" rel="noopener">https://weapp.iviewui.com/</a></p>
+</blockquote>
+<p>介绍：iView Weapp 提供了与 iView 一致的 UI 和尽可能相同的接口名称，大幅度降低了学习成本，是一套一套高质量的微信小程序 UI 组件库。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5640239-0199c16af08dcf53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="在这里插入图片描述"></p>
+<h2 id="8：ZanUI-WeApp-–-一个颜值高、好用、易扩展的微信小程序-UI-库"><a href="#8：ZanUI-WeApp-–-一个颜值高、好用、易扩展的微信小程序-UI-库" class="headerlink" title="8：ZanUI-WeApp – 一个颜值高、好用、易扩展的微信小程序 UI 库"></a>8：ZanUI-WeApp – 一个颜值高、好用、易扩展的微信小程序 UI 库</h2><blockquote>
+<p><a href="https://cnodejs.org/topic/589d625a5c8036f7019e7a4a" target="_blank" rel="noopener">https://cnodejs.org/topic/589d625a5c8036f7019e7a4a</a></p>
+</blockquote>
+<p>官方介绍：ZanUI-WeApp结合了微信的视觉规范，为用户提供更加统一的使用感受。 包含 badge、btn、等共计 17 类组件或元素。</p>
+<p><a href="https://blog.csdn.net/qq_36538012/article/details/80882709" target="_blank" rel="noopener">原文</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/weixin7/" title="update之微信小程序BUG" itemprop="url">update之微信小程序BUG</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:43:54.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>今天在赶着一个项目，突然发现小程序之中使用update不行。数据不能更新<br>这就是我的代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">const db = wx.cloud.database()</span><br><span class="line">    const _ = db.command</span><br><span class="line">    // 1、首先看xxx集合里面有没有存在这个人</span><br><span class="line">    db.collection(&apos;xxx&apos;).where(&#123;</span><br><span class="line">      shId: res.currentTarget.dataset.xinxi._openid</span><br><span class="line">    &#125;).get(&#123;</span><br><span class="line">      success: function(e) &#123;</span><br><span class="line">        // 2、没有的话add一个用户</span><br><span class="line">        if (e.data.length == 0) &#123;</span><br><span class="line">          db.collection(&apos;jifen&apos;).add(&#123;</span><br><span class="line">            data: &#123;</span><br><span class="line">              ~~~~~~~~~~~~~~~</span><br><span class="line">            &#125;,</span><br><span class="line">            // 添加成功、然后修改审核里面的东西</span><br><span class="line">            success(al) &#123;</span><br><span class="line">              db.collection(xxx).where(&#123;</span><br><span class="line">              ~~~~~~~~~~~~~~~~~~</span><br><span class="line">              &#125;).update(&#123;</span><br><span class="line">                data: &#123;</span><br><span class="line">                  ~~~</span><br><span class="line">                &#125;,</span><br><span class="line">                // 失败的话，直接showToast/成功跳转到原页面</span><br><span class="line">                success(value2) &#123;</span><br><span class="line">                  if (value2.stats.updated == 0) &#123;</span><br><span class="line">                 ~~~</span><br><span class="line">                  &#125; else &#123;</span><br><span class="line">                    ~~~</span><br><span class="line">                  &#125;</span><br><span class="line">                &#125;</span><br><span class="line">              &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;)</span><br><span class="line">          //3、存在这个用户，直接去更新里面的数据 </span><br><span class="line">        &#125; else &#123;</span><br><span class="line">        ~~~</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+<p>结果当然是更新不了数据呀~</p>
+<p>以下看了<a href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/update.html" target="_blank" rel="noopener">官网</a>只有自己的理解：<br>where适用于对于集合的更新，对于单条数据并没有作用<br>所以做出了一下修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">const db = wx.cloud.database()</span><br><span class="line">    const _ = db.command</span><br><span class="line">    // 1、首先看xxx集合里面有没有存在这个人</span><br><span class="line">    db.collection(&apos;xxx&apos;).where(&#123;</span><br><span class="line">      shId: res.currentTarget.dataset.xinxi._openid</span><br><span class="line">    &#125;).get(&#123;</span><br><span class="line">      success: function(e) &#123;</span><br><span class="line">        // 2、没有的话add一个用户</span><br><span class="line">        if (e.data.length == 0) &#123;</span><br><span class="line">          db.collection(&apos;jifen&apos;).add(&#123;</span><br><span class="line">            data: &#123;</span><br><span class="line">              ~~~~~~~~~~~~~~~</span><br><span class="line">            &#125;,</span><br><span class="line">            // 添加成功、然后修改审核里面的东西</span><br><span class="line">            success(al) &#123;</span><br><span class="line">              db.collection(xxx).doc(_id).update(&#123;</span><br><span class="line">                data: &#123;</span><br><span class="line">                  ~~~</span><br><span class="line">                &#125;,</span><br><span class="line">                // 失败的话，直接showToast/成功跳转到原页面</span><br><span class="line">                success(value2) &#123;</span><br><span class="line">                  if (value2.stats.updated == 0) &#123;</span><br><span class="line">                 ~~~</span><br><span class="line">                  &#125; else &#123;</span><br><span class="line">                    ~~~</span><br><span class="line">                  &#125;</span><br><span class="line">                &#125;</span><br><span class="line">              &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;)</span><br><span class="line">          //3、存在这个用户，直接去更新里面的数据 </span><br><span class="line">        &#125; else &#123;</span><br><span class="line">        ~~~</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+<p>解析</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">db.collection(&apos;todos&apos;).doc(&apos;todo-identifiant-aleatoire&apos;).update(&#123;</span><br><span class="line">  // data 传入需要局部更新的数据</span><br><span class="line">  data: &#123;</span><br><span class="line">    // 表示将 done 字段置为 true</span><br><span class="line">    done: true</span><br><span class="line">  &#125;,</span><br><span class="line">  success(res) &#123;</span><br><span class="line">    console.log(res.data)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>问题成功解决，数据修改成功</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/weixin6/" title="微信小程序 | WeUI" itemprop="url">微信小程序 | WeUI</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:43:50.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信 Web 开发量身设计，可以令用户的使用感知更加统一。包含按钮button、组件cell、弹框dialog、 进度条progress、 提示toast、文章article、弹出菜单actionsheet、图标icon等各式元素。</p>
+<h2 id="1、GitHub网址：https-github-com-weui-weui-wxss"><a href="#1、GitHub网址：https-github-com-weui-weui-wxss" class="headerlink" title="1、GitHub网址：https://github.com/weui/weui-wxss/"></a>1、GitHub网址：<a href="https://github.com/weui/weui-wxss/" target="_blank" rel="noopener">https://github.com/weui/weui-wxss/</a></h2><h2 id="2、如何使用"><a href="#2、如何使用" class="headerlink" title="2、如何使用"></a>2、如何使用</h2><p>使用git克隆到本地</p>
+<blockquote>
+<p>git clone <a href="https://github.com/weui/weui-wxss/" target="_blank" rel="noopener">https://github.com/weui/weui-wxss/</a></p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20190114113322191.png" alt="在这里插入图片描述"></p>
+<p>可以看到如下目录：</p>
+<p><img src="https://img-blog.csdnimg.cn/2019011411342226.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>我们只需要将weui-wxss-master\dist\style\weui.wxss文件导入到小程序项目的根目录下：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190114113505460.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>新建微信小程序项目，将weui.wxss文件导入到小程序项目的根目录下：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190114114419621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>在项目中引用：在app.wxss中加入weui.wxss的引用- @import ‘weui.wxss’;</p>
+<p><img src="https://img-blog.csdnimg.cn/20190114114735410.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后报错：<br><img src="https://img-blog.csdnimg.cn/20190114115842949.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>还需将base和widget引入<br><img src="https://img-blog.csdnimg.cn/20190114115927816.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="使用WeUI样式说明："><a href="#使用WeUI样式说明：" class="headerlink" title="使用WeUI样式说明："></a>使用WeUI样式说明：</h2><p>1、根组件使用class=”page”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class=&quot;page&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>2、页面骨架组件使用class=”page__xxx”(注意是两个下划线)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class=&quot;page__hd&quot;&gt;</span><br><span class="line">    &lt;view class=&quot;page__title&quot;&gt;标题&lt;/view&gt;</span><br><span class="line">    &lt;view class=&quot;page__desc&quot;&gt;文章&lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<p>3、其他组件都已weui-开头后接组件名称，例如class=”weui-footer”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class=&quot;weui-footer&quot;&gt;我是页脚&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<p>4、组件的子组件样式，例如view.weui-footer组件还有链接和版权信息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class=&quot;weui-footer&quot;&gt;</span><br><span class="line">     &lt;view class=&apos;weui-footer__links&apos;&gt;</span><br><span class="line">       &lt;navigator url=&apos;&apos; class=&apos;weui-footer__link&apos;&gt;隔壁小陈&lt;/navigator&gt; </span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">    &lt;view class=&apos;weui-footer__text&apos;&gt;Email:1724264854@qq.com&lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20190114120121555.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="WeUI标签预览（具体应以WeUI样式标签为准）"><a href="#WeUI标签预览（具体应以WeUI样式标签为准）" class="headerlink" title="WeUI标签预览（具体应以WeUI样式标签为准）"></a>WeUI标签预览（具体应以WeUI样式标签为准）</h2><p><img src="https://img-blog.csdnimg.cn/20190114120507795.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>在线体验：</strong><br><img src="https://img-blog.csdnimg.cn/20190114120527690.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>1、表单：</strong></p>
+<p>Button：</p>
+<p>weui-btn：按钮</p>
+<p>weui-btn mini-btn：小按钮</p>
+<p>list：</p>
+<p>weui-cells__title：列表组件标题</p>
+<p>weui-cell__bd：标题文字</p>
+<p>weui-cell__ft： 说明文字</p>
+<p>Input：</p>
+<p>weui-cells__title：列表组件标题</p>
+<p>weui-check： 单选</p>
+<p>weui-icon-radio： 单选图标</p>
+<p>weui-cell__bd： 标题文字说明</p>
+<p>weui-label： 列表</p>
+<p>weui-input： 输入</p>
+<p>weui-vcode-btn： 获取验证码按钮</p>
+<p>weui-vcode-img： 验证码图片</p>
+<p>weui-textarea：请输入文本</p>
+<p>weui-select： 选择</p>
+<p>Slider：滑动（参考小程序文档）</p>
+<p>Uploader：</p>
+<p>weui-uploader：上传</p>
+<p>weui-uploader__title：图片上传</p>
+<p>weui-uploader__info： 上传个数</p>
+<p>weui-uploader__file： 上传文件</p>
+<p>weui-uploader__img：上传图片</p>
+<p><strong>2、基础组件</strong></p>
+<p>Article：</p>
+<p>weui-article：文章标签</p>
+<p>weui-article__h1：标题</p>
+<p>weui-article__title：章标题</p>
+<p>weui-article__section：文章区域</p>
+<p>weui-article__h3：节标题</p>
+<p>weui-article__p：文字</p>
+<p>weui-article__img：图片</p>
+<p>Badge：徽章</p>
+<p>weui-cells__title：列表组件标题</p>
+<p>weui-cell__bd：组件列表行</p>
+<p>weui-badge：徽章</p>
+<p>Flex：布局</p>
+<p>weui-flex：布局区域</p>
+<p>weui-flex__item：布局选项</p>
+<p>Footer：页脚</p>
+<p>weui-footer：页脚名称</p>
+<p>weui-footer__text：页脚内容</p>
+<p>weui-footer__links：页脚链接</p>
+<p>Gallery：画廊（参考小程序文档）</p>
+<p>Grid：九宫格</p>
+<p>weui-grids：九宫格区域</p>
+<p>weui-grid__icon：九宫格图标</p>
+<p>weui-grid__label：九宫格列表</p>
+<p>Icons：图标</p>
+<p>icon-box：图表区域</p>
+<p>icon-box__title：图标标题</p>
+<p>icon-box__desc：图标说明</p>
+<p>Loadmore：加载更多</p>
+<p>weui-loading：加载更多标签</p>
+<p>weui-loadmore__tips：正在加载</p>
+<p>Panel：面板</p>
+<p>weui-panel__hd：面板页头</p>
+<p>weui-panel__bd：面板主体</p>
+<p>weui-media-box__title：面板标题</p>
+<p>weui-media-box__desc：面板说明</p>
+<p>weui-media-box__info__meta：面板底部文字说明</p>
+<p>Preview：表单预览</p>
+<p>weui-form-preview：表单预览区域</p>
+<p>weui-form-preview__hd：表单预览页头</p>
+<p>weui-form-preview__bd：表单预览主体</p>
+<p>weui-form-preview__item：表单预览列表区域</p>
+<p>weui-form-preview__label：表单预览列表标题</p>
+<p>weui-form-preview__value_in-hd：表单预览页头内容</p>
+<p>weui-form-preview__value：表单预览列表内容</p>
+<p>Progress：进度条</p>
+<p>weui-progress：进度条标签</p>
+<p>weui-progress__bar：进度条</p>
+<p>weui-progress__opr：进度条图标</p>
+<p><strong>3、操作反馈</strong></p>
+<p>ActionSheet：弹出式菜单</p>
+<p>weui-btn-area：按钮标签区域</p>
+<p>Dialog：对话框</p>
+<p>weui-btn-area：按钮标签区域</p>
+<p>weui-btn：按钮</p>
+<p>Msg：提示页</p>
+<p>weui-btn-area：按钮标签区域</p>
+<p>weui-btn：按钮</p>
+<p>weui-msg__icon-area：提示图标</p>
+<p>weui-msg__text-area：提示区域</p>
+<p>weui-msg__title：提示标题</p>
+<p>weui-msg__desc：提示说明</p>
+<p>weui-msg__opr-area：提示后操作区域</p>
+<p>weui-msg__extra-area：额外区域</p>
+<p>Picker：选择器</p>
+<p>weui-btn-area：按钮区域</p>
+<p>Toast：弹出式提示</p>
+<p>weui-btn-area：按钮标签区域</p>
+<p>weui-btn：按钮</p>
+<p><strong>4、导航相关：</strong></p>
+<p>Navbar：头部导航</p>
+<p>weui-navbar：导航标签</p>
+<p>weui-navbar__title：导航标题</p>
+<p>weui-navbar__slider：导航滑块</p>
+<p>weui-tab__panel：导航面板</p>
+<p>weui-tab__content：导航内容</p>
+<p>Tabbar：底部导航（参考小程序文档）</p>
+<p><strong>5、搜索相关</strong></p>
+<p>Searchbar：搜索栏</p>
+<p>weui-search-bar：搜索栏区域</p>
+<p>weui-search-bar__form：搜索栏表单</p>
+<p>weui-search-bar__label：搜索栏列表</p>
+<p>weui-icon-search：搜索栏图标</p>
+<p>weui-search-bar__text：搜索栏文字</p>
+<p>weui-cell__bd：搜索栏文本</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/weixin5/" title="微信小程序 | 模板消息" itemprop="url">微信小程序 | 模板消息</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:43:35.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="1-传统方式实现模板消息"><a href="#1-传统方式实现模板消息" class="headerlink" title="1.传统方式实现模板消息"></a>1.传统方式实现模板消息</h2><p>1、<strong>获取openId</strong></p>
+<p>2、<strong>获取模板ID</strong></p>
+<p><em>有两个方法可以获取模版ID</em></p>
 <ul>
-<li>CACHE MANIFEST - 在此标题下列出的文件将在首次下载后进行缓存</li>
-<li>NETWORK - 在此标题下列出的文件需要与服务器的连接，且不会被缓存</li>
-<li>FALLBACK - 在此标题下列出的文件规定当页面无法访问时的回退页面（比如 404 页面）</li>
+<li>通过模版消息管理接口获取模版ID</li>
+<li>在微信公众平台手动配置获取模版ID</li>
 </ul>
-<p>下面举个例子来说明一下：<br><strong>&gt;index.html</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html manifest=&quot;index.appcache&quot; &gt;   &lt;!-- manifest指定本地的缓存文件 --&gt;</span><br><span class="line">&lt;head lang=&quot;en&quot;&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"> </span><br><span class="line">    &lt;script src=&quot;https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=&quot;https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;img src=&quot;http://wx2.sinaimg.cn/large/83940082gy1fpmpho2xl3j20nm11i0ws.jpg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p><strong>&gt;index.appcache</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line"></span><br><span class="line"># 注释以#开头</span><br><span class="line"># 下面是要缓存的文件</span><br><span class="line">CACHE:</span><br><span class="line">https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js</span><br><span class="line">https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js</span><br><span class="line"></span><br><span class="line"># 指定必须联网才能访问的文件</span><br><span class="line">NETWORK:</span><br><span class="line">http://wx2.sinaimg.cn/large/83940082gy1fpmpho2xl3j20nm11i0ws.jpg</span><br><span class="line"></span><br><span class="line"># 网页无法访问时要访问的页面</span><br><span class="line">FALLBACK:</span><br><span class="line">404.html</span><br></pre></td></tr></table></figure>
-<h2 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h2><p>所有主流浏览器均支持应用程序缓存，除了 Internet Explorer。</p>
-<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><ul>
-<li>以 “#” 开头的是注释行，但也可满足其他用途。应用的缓存会在其 manifest 文件更改时被更新。</li>
-<li>如果您编辑了一幅图片，或者修改了一个 JavaScript 函数，这些改变都不会被重新缓存。</li>
-<li>更新注释行中的日期和版本号是一种使浏览器重新缓存文件的办法。</li>
-</ul>
-<h2 id="更新缓存"><a href="#更新缓存" class="headerlink" title="更新缓存"></a>更新缓存</h2><p>一旦应用被缓存，它就会保持缓存直到发生下列情况：</p>
+<p>登录<a href="https://mp.weixin.qq.com" target="_blank" rel="noopener">https://mp.weixin.qq.com</a> 获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用</p>
+<p>3、<strong>获取access_token</strong></p>
+<p>access_token 的有效期目前为2个小时，需定时刷新，重复获取将导致上次获取的 access_token 失效</p>
+<p>公众平台的 API 调用所需的 access_token 的使用及生成方式说明：</p>
+<blockquote>
+<p> <strong>1.</strong> 为了保密 appsecrect，第三方需要一个 access_token 获取和刷新的中控服务器。而其他业务逻辑服务器所使用的access_token 均来自于该中控服务器，不应该各自去刷新，否则会造成 access_token 覆盖而影响业务；<br><strong>2.</strong> 目前 access_token 的有效期通过返回的 expires_in来传达，目前是7200秒之内的值。中控服务器需要根据这个有效时间提前去刷新新access_token。在刷新过程中，中控服务器对外输出的依然是老access_token，此时公众平台后台会保证在刷新短时间内，新老 access_token 都可用，这保证了第三方业务的平滑过渡；<br><strong>3.</strong> access_token 的有效时间可能会在未来有调整，所以中控服务器不仅需要内部定时主动刷新，还需要提供被动刷新access_token 的接口，这样便于业务服务器在 API 调用获知 access_token 已超时的情况下，可以触发access_token 的刷新流程。</p>
+</blockquote>
+<p>开发者可以使用 AppID 和 AppSecret 调用本接口来获取 access_token。AppID 和 AppSecret 可登录微信公众平台官网-设置-开发设置中获得（需要已经绑定成为开发者，且帐号没有异常状态）。AppSecret 生成后请自行保存，因为在公众平台每次生成查看都会导致 AppSecret 被重置。注意调用所有微信接口时均需使用 https 协议。如果第三方不使用中控服务器，而是选择各个业务逻辑点各自去刷新 access_token，那么就可能会产生冲突，导致服务不稳定</p>
+<p><strong>以上内容是微信开发文档给出的access_token的说明，总的来说就是两点</strong></p>
+<p>（1）access_token是发送模板消息的凭证，需要用微信小程序的AppID 和AppSecret 调用接口来获取，有效时间为2小时<br>（2）如果在此获取access_token则会导致前一个access_token失效，有多个公众号和小程序的开发者一定要注意这一点！</p>
+<p>接口地址：</p>
+<blockquote>
+<p><a href="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET" target="_blank" rel="noopener">https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET</a></p>
+</blockquote>
+<blockquote>
+<p>GET请求</p>
+</blockquote>
+<p>参数说明 :<br>|  参数|必填  | 说明|<br>|–|–| –|<br>| grant_type | 是  | 获取 access_token 填写 client_credential |<br>| appid | 是  | 第三方用户唯一凭证 |<br>| secret | 是  | 第三方用户唯一凭证密钥，即appsecret |</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function onRequest(request, response, modules) &#123;</span><br><span class="line">var http = modules.oHttp;</span><br><span class="line">//发起Get请求</span><br><span class="line">http(&apos;https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=XXX&amp;secret=XXX&apos;, function (error, res, body) &#123;</span><br><span class="line">    response.send(body);</span><br><span class="line">&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Response Body</span><br><span class="line">                             &#123;</span><br><span class="line">                             &quot;code&quot;: 200,</span><br><span class="line">                             &quot;msg&quot;:</span><br><span class="line">                             &#123;&quot;access_token&quot;:&quot;6_R8kOFxRLeRtWOq_haIU29XB0hbAoKxFGRqQTZt_HhzCSEvT_xDJ4WLgf9A_dt2pRTCugfUk7IkxR2sfu5zckCwKKWEghCtqlrrQlhdJmCxmkBAaDEdW7AU98D23rUJO5PYruNYOLQ3cpH3iAVTNiADAECW&quot;,&quot;expires_in&quot;:7200&#125;</span><br><span class="line">                             &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>发送模板消息</strong><br>接口地址：(ACCESS_TOKEN 需换成上文获取到的 access_token)</p>
+<blockquote>
+<p><a href="https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=ACCESS_TOKEN" target="_blank" rel="noopener">https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=ACCESS_TOKEN</a></p>
+</blockquote>
+<blockquote>
+<p>POST请求</p>
+</blockquote>
+<p>POST参数说明：<br>|  参数|必填  | 说明|<br>|–|–| –|<br>| touser | 是  | 接收者（用户）的 openid |<br>| template_id | 是  | 所需下发的模板消息的id |<br>| page | 否  | 点击模板卡片后的跳转页面，仅限本小程序内的页面。支持带参数,（示例index?foo=bar）。该字段不填则模板无跳转。 |<br>| form_id | 是  | 表单提交场景下，为 submit 事件带上的 formId；支付场景下，为本次支付的 prepay_id |<br>| data | 是  | 模板内容，不填则下发空模板 |<br>| color| 否  | 模板内容字体的颜色，不填默认黑色 |<br>| emphasis_keyword| 否  | 模板需要放大的关键词，不填则默认无放大 |</p>
+<p>formid说明：页面的 <form> 组件，属性report-submit为true时，可以声明为需发模板消息，此时点击按钮提交表单可以获取formId</form></p>
+<p>代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var temp = &#123;</span><br><span class="line">&quot;touser&quot;: touser,//用户的openid</span><br><span class="line">&quot;template_id&quot;: template_id,//模板id</span><br><span class="line">&quot;page&quot;: &quot;&quot;,</span><br><span class="line">&quot;form_id&quot;: formid,//表单id</span><br><span class="line">&quot;data&quot;: &#123;</span><br><span class="line">&quot;keyword1&quot;: &#123;</span><br><span class="line">&quot;value&quot;: title,</span><br><span class="line">&quot;color&quot;: &quot;#173177&quot;</span><br><span class="line">&#125;,</span><br><span class="line">&quot;keyword2&quot;: &#123;</span><br><span class="line">&quot;value&quot;: gettime()</span><br><span class="line">&#125;,</span><br><span class="line">&#125;,</span><br><span class="line">&quot;emphasis_keyword&quot;: &quot;keyword1.DATA&quot; //将keyword1放大</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>测试效果：<br><img src="https://img-blog.csdn.net/20180126212459841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFveHVuamk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="在这里插入图片描述"></p>
+<h2 id="2、基于Bmob后端云的模板消息实现"><a href="#2、基于Bmob后端云的模板消息实现" class="headerlink" title="2、基于Bmob后端云的模板消息实现"></a>2、基于Bmob后端云的模板消息实现</h2><p>第一种方法实现起来过于繁琐，在使用过程中也要中间服务器的帮助，如果没有中间服务器，或者服务器端的代码不太熟悉，那么Bmob后端云则可以帮助你实现你要的功能</p>
+<p>只需要下载按照官网文档在小程序内初始化好Bmob，那么就可以调用Bmob模板消息的方法，如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">function send(title, formid, touser)&#123;</span><br><span class="line">  var Bmob = require(&apos;bmob.js&apos;);</span><br><span class="line">  var temp = &#123;</span><br><span class="line">    &quot;touser&quot;: touser,</span><br><span class="line">    &quot;template_id&quot;: &quot;ClYq9lc8bZh26uM993NNIknasAVBdk0wSYnDrkClK40&quot;,</span><br><span class="line">    &quot;page&quot;: &quot;&quot;,</span><br><span class="line">    &quot;form_id&quot;: formid,</span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line">      &quot;keyword1&quot;: &#123;</span><br><span class="line">        &quot;value&quot;: title,</span><br><span class="line">        &quot;color&quot;: &quot;#173177&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">      &quot;keyword2&quot;: &#123;</span><br><span class="line">        &quot;value&quot;: gettime()</span><br><span class="line">      &#125;,</span><br><span class="line"> </span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;emphasis_keyword&quot;: &quot;keyword1.DATA&quot;</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line">  Bmob.sendMessage(temp).then(function (obj) &#123;</span><br><span class="line">    console.log(&apos;发送成功&apos;);</span><br><span class="line">  &#125;,</span><br><span class="line">    function (err) &#123;</span><br><span class="line">      common.showTip(&apos;失败&apos; + err)</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样模板消息就解决了！！！</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/weixin4/" title="微信小程序 | template" itemprop="url">微信小程序 | template</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:43:30.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="模板template的使用"><a href="#模板template的使用" class="headerlink" title="模板template的使用"></a>模板template的使用</h2><p>如下图，我们经常做这样的列表页，课程搜索结果页和课程列表页结构是完全一样的，非常适合使用模板来完成页面搭建。</p>
+<p>这样我们就不用写那些重复的代码了,而且修改界面的时候也只需要改动模板一个地方</p>
+<p>一、定义模板<br>1、新建一个template文件夹用来管理项目中所有的模板；<br>2、新建一个personCourseTmp.wxml文件来定义模板； </p>
+<p>3、使用name属性，作为模板的名字。然后在<template>内定义代码片段。</template></p>
+<p>那我们开始实现吧,建模板2个文件</p>
+<p>personCourseTmp.wxml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;template name=&quot;personCourseItemTmp&quot;&gt;</span><br><span class="line">  &lt;view class=&quot;courses-list&quot; style=&apos;background-image: url(&quot;&#123;&#123;cardImage&#125;&#125;&quot;)&apos;&gt;</span><br><span class="line"> </span><br><span class="line">    &lt;view class=&quot;money-border&quot;&gt; ￥</span><br><span class="line">    &lt;text class=&quot;money&quot;&gt;&#123;&#123;cardMoney&#125;&#125;&lt;/text&gt;/课时&lt;/view&gt;</span><br><span class="line"> </span><br><span class="line">    &lt;view class=&quot;name&quot;&gt;</span><br><span class="line">       &lt;text class=&quot;ename&quot;&gt;GillMo&lt;/text&gt;</span><br><span class="line">       &lt;text class=&quot;cname&quot;&gt;.小川&lt;/text&gt;</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line"> </span><br><span class="line">    &lt;view class=&quot;mark&quot;&gt;</span><br><span class="line">      &lt;view&gt;&#123;&#123;cardMark&#125;&#125;&lt;/view&gt;</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">    </span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+<p>样式文件personCourseTmp.wxss</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">.courses-list &#123;</span><br><span class="line">  height: 342rpx;</span><br><span class="line">  margin: 40rpx auto;</span><br><span class="line">  border-top: 2rpx solid #f0f0f0;</span><br><span class="line">  margin-top: 10rpx;</span><br><span class="line">   flex-direction: column;</span><br><span class="line">  align-items: flex-start;</span><br><span class="line">  width: 670rpx;</span><br><span class="line">  border-radius: 8px;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.money-border &#123;</span><br><span class="line">  font-family: PingFangSC-Semibold;</span><br><span class="line">  font-size: 28rpx;</span><br><span class="line">  color: #fff;</span><br><span class="line">  letter-spacing: -0.41px;</span><br><span class="line">  height: 56rpx;</span><br><span class="line">  margin-top: 20rpx;</span><br><span class="line">  margin-left: 20rpx;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.money &#123;</span><br><span class="line">  font-size: 40rpx;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.name &#123;</span><br><span class="line">  margin-top: 158rpx;</span><br><span class="line">  margin-left: 20rpx;</span><br><span class="line">  font-family: PingFangSC-Semibold;</span><br><span class="line">  color: #fff;</span><br><span class="line">  letter-spacing: -0.41px;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.ename &#123;</span><br><span class="line">  font-size: 40rpx;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.cname &#123;</span><br><span class="line">  font-size: 30rpx;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.mark &#123;</span><br><span class="line">  font-family: PingFangSC-Regular;</span><br><span class="line">  font-size: 28rpx;</span><br><span class="line">  color: #fff;</span><br><span class="line">  margin-left: 20rpx;</span><br><span class="line">  letter-spacing: -0.41px;</span><br><span class="line">  margin-bottom: 18rpx;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>那我们如何在页面上使用呢,引入样式文件和视图文件</p>
+<p>比如我们要在Course.wxss上面引入样式文件</p>
+<blockquote>
+<p>@import “../template/personCourseTmp.wxss”;</p>
+</blockquote>
+<p>只需要在Course.wxss里面加入上面的代码</p>
+<p>我们要在Course.wxml上面引入视图文件</p>
+<blockquote>
+<p> &lt; import src=”../template/personCourseTmp.wxml” /&gt;</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;block wx:for=&quot;&#123;&#123;goodlist&#125;&#125;&quot; wx:key=&quot;idx&quot;&gt;</span><br><span class="line">    &lt;template is=&quot;personCourseItemTmp&quot; data=&quot;&#123;&#123;...item&#125;&#125;&quot;&gt;&lt;/template&gt;</span><br><span class="line">  &lt;/navigator&gt;</span><br><span class="line">&lt;/block&gt;</span><br></pre></td></tr></table></figure>
+<p>传数据时item前面加三个点… 模板里面就不需要写item了,</p>
+<p>如果要传多个数据到模板</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class=&quot;tab-list&quot; wx:for=&quot;&#123;&#123;list&#125;&#125;&quot; wx:key=&quot;index&quot;&gt;</span><br><span class="line">          &lt;template is=&quot;day-tab&quot; data=&quot;&#123;&#123;item,index:index,currentTarget:currentTarget&#125;&#125;&quot; wx:key=&quot;index&quot;&gt;&lt;/template&gt;</span><br><span class="line"> &lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<p>用逗号分开,item 是对象,index是单个数据,要用键值对,template就介绍到这来</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/weixin3/" title="微信小程序| ES6 箭头函数" itemprop="url">微信小程序| ES6 箭头函数</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:43:26.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p><strong>解决问题：</strong><br>在微信小程序的开发工具中，会发现里面已经有ES6语法转换ES5的设置，但是当你使用了箭头函数在里面使用this.setData会发现报错，这可能又是腾讯莫名的BUG了，建议换回ES5语法使用function(){}写法较为妥当。<br><img src="https://img-blog.csdnimg.cn/20190207152644298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>1、单参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function cheng(a=3)&#123;</span><br><span class="line">　　return a*a;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">let cheng = (a=3) =&gt; a*a;  // 箭头左边为参数  箭头右边为返回值</span><br><span class="line">console.log(cheng(9));</span><br></pre></td></tr></table></figure>
+<p>2、多参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function add(a,b)&#123;</span><br><span class="line">　　return a+b;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">let add = (a,b) =&gt; a+b;  // 默认返回值</span><br><span class="line">console.log(add(3,9));</span><br></pre></td></tr></table></figure>
+<p>3、无返回值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function add(a,b)&#123;</span><br><span class="line">　　console.log(a+b);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">let add = (a,b) =&gt; &#123;console.log(a+b)&#125;;   // 如果没有返回值，需要加&#123;&#125;</span><br><span class="line">add(3,9);</span><br></pre></td></tr></table></figure>
+<p>4、多行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function add(a,b)&#123;</span><br><span class="line">　　console.log(a+b);</span><br><span class="line">　　return a+b;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">let add = (a,b) =&gt; &#123;</span><br><span class="line">　　console.log(a+b);</span><br><span class="line">　　return a+b;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">console.log(add(3,9));</span><br></pre></td></tr></table></figure>
+<p><strong>除了简洁以外，为啥需要改变原来的习惯去使用箭头函数？</strong></p>
+<p>它对this的处理与一般的普通函数不一样，箭头函数的this始终指向函数定义时的this,而非执行时</p>
+<p><strong>例如</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">　　x:1,</span><br><span class="line">　　func: function()&#123; console.log(this.x) &#125;,  // 此处的 this 代表 obj</span><br><span class="line">　　test: function()&#123;</span><br><span class="line">　　　　setTimeout(function()&#123;</span><br><span class="line">　　　　　　alert(this);  // 因为使用了异步,在运行过程中，this发生了指针转移，不再指向obj,而是指向全局 Window对象</span><br><span class="line">　　　　　　// [object Window]</span><br><span class="line">　　　　　　this.func();</span><br><span class="line">　　　　&#125;,1000);</span><br><span class="line">　　&#125;</span><br><span class="line">&#125;;、</span><br><span class="line">obj.test(); </span><br><span class="line"></span><br><span class="line">//报错</span><br><span class="line"> // TypeError: this.func is not a function</span><br></pre></td></tr></table></figure>
+<p>箭头函数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">　　x: 1,</span><br><span class="line">　　func: function()&#123; console.log(this.x) &#125;,</span><br><span class="line">　　test: function()&#123;</span><br><span class="line">　　　　setTimeout(() =&gt; &#123;</span><br><span class="line">　　　　　　alert(this); // [object Object]  此处的this指向obj</span><br><span class="line">　　　　　　this.func();</span><br><span class="line">　　　　&#125;,1000);</span><br><span class="line">　　&#125;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line">obj.test();  // 这回this就指向obj了</span><br></pre></td></tr></table></figure>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/weixin2/" title="微信小程序 | promise（上）" itemprop="url">微信小程序 | promise（上）</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:43:22.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>很多人都不太了解，到底在什么时候调用promise呢？</p>
+<ol>
+<li>很多调用是异步（发起动作和成功或者失败时调用的函数是两个函数，调用方面没有调用与被调用的关系）的。</li>
+<li>从业务逻辑上说，这些 异步调用按照一个调用顺序调用，需要在第一个成功后，调用第二个，第二个成功后调用第三个，以此类推。</li>
+<li>当业务逻辑用的非常复杂的时，代码逻辑性变得很差。</li>
+</ol>
+<p>首先一段代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 当参数a大于10且参数fn2是一个方法时 执行fn2</span><br><span class="line">function fn1(a, fn2) &#123;</span><br><span class="line">    if (a &gt; 10 &amp;&amp; typeof fn2 == &apos;function&apos;) &#123;</span><br><span class="line">        fn2()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">fn1(11, function() &#123;</span><br><span class="line">    console.log(&apos;this is a callback&apos;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>一般来说我们会碰到的回调嵌套都不会很多，一般就一到两级，但是某些情况下，回调嵌套很多时，代码就会非常繁琐，会给我们的编程带来很多的麻烦，这种情况俗称——回调地狱。</p>
+<p>promise能解决的问题：</p>
 <ul>
-<li>用户清空浏览器缓存</li>
-<li>manifest 文件被修改（阅读上面的tips）</li>
-<li>由程序来更新应用缓存</li>
+<li>回调地狱，代码难以维护， 常常第一个的函数的输出是第二个函数的输入这种现象</li>
+<li>promise可以支持多个并发的请求，获取并发请求中的数据</li>
+<li>这个promise可以解决异步的问题，本身不能说promise是异步的</li>
 </ul>
-<p><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line"># 2012-02-21 v1.0.0</span><br><span class="line">/theme.css</span><br><span class="line">/logo.gif</span><br><span class="line">/main.js</span><br><span class="line"></span><br><span class="line">NETWORK:</span><br><span class="line">login.asp</span><br><span class="line"></span><br><span class="line">FALLBACK:</span><br><span class="line">/html5/ /404.html</span><br></pre></td></tr></table></figure>
-<p><strong>温馨提示</strong></p>
-<p>一旦文件被缓存，则浏览器会继续展示已缓存的版本，即使您修改了服务器上的文件。为了确保浏览器更新缓存，您需要更新 manifest 文件。</p>
-<p><strong>容量问题：</strong> 某些浏览器对缓存数据的容量限制可能不太一样（某些浏览器设置的限制是每个站点 5MB）</p>
+<h2 id="es6-promise用法大全"><a href="#es6-promise用法大全" class="headerlink" title="es6 promise用法大全"></a>es6 promise用法大全</h2><p><strong>Promise是一个构造函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let p = new Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">    //做一些异步操作</span><br><span class="line">    setTimeout(() =&gt; &#123;</span><br><span class="line">        console.log(&apos;执行完成&apos;);</span><br><span class="line">        resolve(&apos;我是成功！！&apos;);</span><br><span class="line">    &#125;, 2000);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Promise的构造函数接收一个参数：函数，并且这个函数需要传入两个参数：</p>
+<ul>
+<li>resolve ：异步操作执行成功后的回调函数</li>
+<li>reject：异步操作执行失败后的回调函数<h2 id="then-链式操作的用法"><a href="#then-链式操作的用法" class="headerlink" title="then 链式操作的用法"></a>then 链式操作的用法</h2></li>
+</ul>
+<p>从表面上看，Promise只是能够简化层层回调的写法，而实质上，Promise的精髓是“状态”，用维护状态、传递状态的方式来使得回调函数能够及时调用，它比传递callback函数要简单、灵活的多。所以使用Promise的正确场景是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">p.then((data) =&gt; &#123;</span><br><span class="line">    console.log(data);</span><br><span class="line">&#125;)</span><br><span class="line">.then((data) =&gt; &#123;</span><br><span class="line">    console.log(data);</span><br><span class="line">&#125;)</span><br><span class="line">.then((data) =&gt; &#123;</span><br><span class="line">    console.log(data);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="reject的用法"><a href="#reject的用法" class="headerlink" title="reject的用法 :"></a>reject的用法 :</h2><p>把Promise的状态置为rejected，这样我们在then中就能捕捉到，然后执行“失败”情况的回调。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">let p = new Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">    //做一些异步操作</span><br><span class="line">  setTimeout(function()&#123;</span><br><span class="line">        var num = Math.ceil(Math.random()*10); //生成1-10的随机数</span><br><span class="line">        if(num&lt;=5)&#123;</span><br><span class="line">            resolve(num);</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            reject(&apos;数字太大了&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">  &#125;, 2000);</span><br><span class="line">&#125;);</span><br><span class="line">p.then((data) =&gt; &#123;</span><br><span class="line">        console.log(&apos;resolved&apos;,data);</span><br><span class="line">    &#125;,(err) =&gt; &#123;</span><br><span class="line">        console.log(&apos;rejected&apos;,err);</span><br><span class="line">    &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>then中传了两个参数，then方法可以接受两个参数，第一个对应resolve的回调，第二个对应reject的回调。所以我们能够分别拿到他们传过来的数据。</p>
+<h2 id="catch的用法"><a href="#catch的用法" class="headerlink" title="catch的用法"></a>catch的用法</h2><p>它和then的第二个参数一样，用来指定reject的回调</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">p.then((data) =&gt; &#123;</span><br><span class="line">    console.log(&apos;resolved&apos;,data);</span><br><span class="line">&#125;).catch((err) =&gt; &#123;</span><br><span class="line">    console.log(&apos;rejected&apos;,err);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>效果和写在then的第二个参数里面一样。不过它还有另外一个作用：在执行resolve的回调（也就是上面then中的第一个参数）时，如果抛出异常了（代码出错了），那么并不会报错卡死js，而是会进到这个catch方法中</p>
+<p>例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p.then((data) =&gt; &#123;</span><br><span class="line">    console.log(&apos;resolved&apos;,data);</span><br><span class="line">    console.log(somedata); //此处的somedata未定义</span><br><span class="line">&#125;)</span><br><span class="line">.catch((err) =&gt; &#123;</span><br><span class="line">    console.log(&apos;rejected&apos;,err);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h2 id="all的用法：谁跑的慢，以谁为准执行回调。all接收一个数组参数，里面的值最终都算返回Promise对象"><a href="#all的用法：谁跑的慢，以谁为准执行回调。all接收一个数组参数，里面的值最终都算返回Promise对象" class="headerlink" title="all的用法：谁跑的慢，以谁为准执行回调。all接收一个数组参数，里面的值最终都算返回Promise对象"></a>all的用法：谁跑的慢，以谁为准执行回调。all接收一个数组参数，里面的值最终都算返回Promise对象</h2><p>Promise的all方法提供了并行执行异步操作的能力，并且在所有异步操作执行完后才执行回调</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">let Promise1 = new Promise(function(resolve, reject)&#123;&#125;)</span><br><span class="line">let Promise2 = new Promise(function(resolve, reject)&#123;&#125;)</span><br><span class="line">let Promise3 = new Promise(function(resolve, reject)&#123;&#125;)</span><br><span class="line"> </span><br><span class="line">let p = Promise.all([Promise1, Promise2, Promise3])</span><br><span class="line"> </span><br><span class="line">p.then(funciton()&#123;</span><br><span class="line">  // 三个都成功则成功  </span><br><span class="line">&#125;, function()&#123;</span><br><span class="line">  // 只要有失败，则失败 </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>有了all，你就可以并行执行多个异步操作，并且在一个回调中处理所有的返回数据。</p>
+<h2 id="race的用法：谁跑的快，以谁为准执行回调"><a href="#race的用法：谁跑的快，以谁为准执行回调" class="headerlink" title="race的用法：谁跑的快，以谁为准执行回调"></a>race的用法：谁跑的快，以谁为准执行回调</h2><p>race的使用场景：比如我们可以用race给某个异步请求设置超时时间，并且在超时后执行相应的操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">//请求某个图片资源</span><br><span class="line">   function requestImg()&#123;</span><br><span class="line">       var p = new Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">           var img = new Image();</span><br><span class="line">           img.onload = function()&#123;</span><br><span class="line">               resolve(img);</span><br><span class="line">           &#125;</span><br><span class="line">           img.src = &apos;图片的路径&apos;;</span><br><span class="line">       &#125;);</span><br><span class="line">       return p;</span><br><span class="line">   &#125;</span><br><span class="line">   //延时函数，用于给请求计时</span><br><span class="line">   function timeout()&#123;</span><br><span class="line">       var p = new Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">           setTimeout(() =&gt; &#123;</span><br><span class="line">               reject(&apos;图片请求超时&apos;);</span><br><span class="line">           &#125;, 5000);</span><br><span class="line">       &#125;);</span><br><span class="line">       return p;</span><br><span class="line">   &#125;</span><br><span class="line">   Promise.race([requestImg(), timeout()]).then((data) =&gt;&#123;</span><br><span class="line">       console.log(data);</span><br><span class="line">   &#125;).catch((err) =&gt; &#123;</span><br><span class="line">       console.log(err);</span><br><span class="line">   &#125;);</span><br></pre></td></tr></table></figure>
+<p>requestImg函数会异步请求一张图片，我把地址写为”图片的路径”，所以肯定是无法成功请求到的。timeout函数是一个延时5秒的异步操作。我们把这两个返回Promise对象的函数放进race，于是他俩就会赛跑，如果5秒之内图片请求成功了，那么遍进入then方法，执行正常的流程。如果5秒钟图片还未成功返回，那么timeout就跑赢了，则进入catch，报出“图片请求超时”的信息。所以运行如下：<br><img src="https://img-blog.csdnimg.cn/20190207190258293.png" alt="在这里插入图片描述"></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/weixin1/" title="微信小程序 | promise（下）手写promise" itemprop="url">微信小程序 | promise（下）手写promise</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:43:17.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 三个状态 resolved(解决) rejected(拒绝) pending(等待)</span></span><br><span class="line"><span class="comment">// promise中放了一个函数 函数executor 执行器</span></span><br><span class="line"><span class="comment">// resolve和reject都是函数  调用后可以让状态进行改变</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// promise解决的问题有 </span></span><br><span class="line"><span class="comment">//1) 回调地狱 </span></span><br><span class="line"><span class="comment">//2)解决 并发异步，再同一时刻内获取并发的结果 </span></span><br><span class="line"><span class="comment">//3) 链式调用 （jquery）</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//常用写法</span></span><br><span class="line"><span class="keyword">let</span> promise=<span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;  <span class="comment">//这个定时器就相当于我们的异步代码 （比如ajax）</span></span><br><span class="line">      resolve(<span class="string">'123'</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">  </span><br><span class="line">&#125;)</span><br><span class="line">promise.then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res)  <span class="comment">//123</span></span><br><span class="line">&#125;,err=&gt;&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//链式调用  说明then返回的是一个Promise的实例</span></span><br><span class="line">promise.then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res)  </span><br><span class="line">&#125;,err=&gt;&#123;</span><br><span class="line">    </span><br><span class="line">&#125;).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res)  </span><br><span class="line">&#125;,err=&gt;&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//执行顺序</span></span><br><span class="line"><span class="keyword">let</span> promise=<span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>&#123;</span><br><span class="line">  </span><br><span class="line">    resolve(<span class="string">'123'</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>)</span><br><span class="line">  </span><br><span class="line">&#125;)</span><br><span class="line">promise.then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res)  <span class="comment">//123</span></span><br><span class="line">&#125;,err=&gt;&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//打印顺序 1，123</span></span><br><span class="line"><span class="comment">//默认promise中的executor(就是Promise中的参数)是同步执行的  //而then中的参数相当于回调</span></span><br></pre></td></tr></table></figure>
+<h2 id="值的穿透"><a href="#值的穿透" class="headerlink" title="值的穿透"></a>值的穿透</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//值的穿透 then不传参数就默认走到下一then中</span></span><br><span class="line">promise.then().then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res)  <span class="comment">//123</span></span><br><span class="line">&#125;,err=&gt;&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="then的问题"><a href="#then的问题" class="headerlink" title="then的问题"></a>then的问题</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//then的问题</span></span><br><span class="line"><span class="comment">// 最常见的  如果返回的是普通值 直接把值作为外层下一次then的参数</span></span><br><span class="line">promise.then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span> <span class="comment">//返回除了Promise外的参数 直接把值作为外层下一次then的参数</span></span><br><span class="line">&#125;,err=&gt;&#123;</span><br><span class="line">    </span><br><span class="line">&#125;).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res)  <span class="comment">//1</span></span><br><span class="line">&#125;,err=&gt;&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// then方法调用后，返回的是一个新的promise  //会把这个promise下的所有包括当前返回的promise执行完毕  取到成功或失败的结果</span></span><br><span class="line"><span class="comment">//当做外层下一次then的成功或失败的结果  执行过程中失败就直接取失败 //成功就一直执行 知道完后拿到结果</span></span><br><span class="line">promise.then(<span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>&#123;</span><br><span class="line">    resolve(<span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>&#123;</span><br><span class="line">      resolve(<span class="string">'123456'</span>);</span><br><span class="line">    &#125;))</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;, err =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log( err);</span><br><span class="line">&#125;).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res)  <span class="comment">//123456</span></span><br><span class="line">&#125;,err=&gt;&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="手写promise"><a href="#手写promise" class="headerlink" title="手写promise"></a>手写promise</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Promise</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(executor) &#123;</span><br><span class="line">    <span class="comment">// 默认状态是等待态</span></span><br><span class="line">    <span class="keyword">this</span>.status = <span class="string">'pending'</span>;</span><br><span class="line">    <span class="comment">//成功后的值</span></span><br><span class="line">    <span class="keyword">this</span>.value = <span class="literal">undefined</span>;</span><br><span class="line">    <span class="comment">//失败的原因</span></span><br><span class="line">    <span class="keyword">this</span>.reason = <span class="literal">undefined</span>;</span><br><span class="line">    <span class="comment">// 存放成功的回调  解决异步调用  就是我们常用的写法那种 </span></span><br><span class="line">    <span class="keyword">this</span>.onResolvedCallbacks = [];</span><br><span class="line">    <span class="comment">// 存放失败的回调  用成功就有失败</span></span><br><span class="line">    <span class="keyword">this</span>.onRejectedCallbacks = [];</span><br><span class="line">    <span class="comment">//resolve，reject 我们executor中的参数</span></span><br><span class="line">    <span class="keyword">let</span> resolve = <span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">//当resolve调用时相当于成功  所以改变状态为成功 reject同理</span></span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">this</span>.status === <span class="string">'pending'</span>) &#123;</span><br><span class="line">        <span class="keyword">this</span>.value = data;</span><br><span class="line">        <span class="keyword">this</span>.status = <span class="string">'resolved'</span>;</span><br><span class="line">        <span class="keyword">this</span>.onResolvedCallbacks.forEach(<span class="function"><span class="params">fn</span> =&gt;</span> fn());</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> reject = <span class="function">(<span class="params">reason</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">this</span>.status === <span class="string">'pending'</span>) &#123;</span><br><span class="line">        <span class="keyword">this</span>.reason = reason;</span><br><span class="line">        <span class="keyword">this</span>.status = <span class="string">'rejected'</span>;</span><br><span class="line">        <span class="keyword">this</span>.onRejectedCallbacks.forEach(<span class="function"><span class="params">fn</span> =&gt;</span> fn());</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">try</span> &#123; <span class="comment">// 执行时可能会发生异常</span></span><br><span class="line">      executor(resolve, reject);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">      reject(e); <span class="comment">// promise失败了</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//then 也有两个参数 成功的回调  和失败的回调</span></span><br><span class="line">  then(onFulFilled, onRejected) &#123;</span><br><span class="line">    <span class="comment">// 解决onFulFilled,onRejected没有传的问题  值的穿透</span></span><br><span class="line">    onFulFilled = <span class="keyword">typeof</span> onFulFilled === <span class="string">'function'</span> ? onFulFilled : <span class="function"><span class="params">y</span> =&gt;</span> y;</span><br><span class="line">    onRejected = <span class="keyword">typeof</span> onRejected === <span class="string">'function'</span> ? onRejected : <span class="function"><span class="params">err</span> =&gt;</span> &#123; <span class="keyword">throw</span> err; &#125;;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> promise2; <span class="comment">//then的返回值</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.status === <span class="string">'resolved'</span>) &#123;</span><br><span class="line">      promise2 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// 成功的逻辑 失败的逻辑</span></span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;<span class="comment">//模拟Promise执行顺序</span></span><br><span class="line">          <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">let</span> x = onFulFilled(<span class="keyword">this</span>.value);</span><br><span class="line">            <span class="comment">// 看x是不是promise 如果是promise 取他的结果 作为promise2,成功的结果</span></span><br><span class="line">            <span class="comment">// 如果要是返回一个普通值 作为promise2,成功的结果</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// resolvePromise可以解析x和promise2之间的关系</span></span><br><span class="line">            resolvePromise(promise2, x, resolve, reject);</span><br><span class="line">          &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">            reject(e);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;, <span class="number">0</span>);</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.status === <span class="string">'rejected'</span>) &#123;</span><br><span class="line">      promise2 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">let</span> x = onRejected(<span class="keyword">this</span>.reason);</span><br><span class="line">            resolvePromise(promise2, x, resolve, reject)</span><br><span class="line">          &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">            reject(e);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;, <span class="number">0</span>);</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 当前既没有完成 也没有失败</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.status === <span class="string">'pending'</span>) &#123;</span><br><span class="line">      <span class="comment">// 存放成功的回调</span></span><br><span class="line">      promise2 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">this</span>.onResolvedCallbacks.push(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">          setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">              <span class="keyword">let</span> x = onFulFilled(<span class="keyword">this</span>.value);</span><br><span class="line">              resolvePromise(promise2, x, resolve, reject)</span><br><span class="line">            &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">              reject(e);</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;, <span class="number">0</span>)</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="comment">// 存放失败的回调</span></span><br><span class="line">        <span class="keyword">this</span>.onRejectedCallbacks.push(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">          setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">              <span class="keyword">let</span> x = onRejected(<span class="keyword">this</span>.reason);</span><br><span class="line">              resolvePromise(promise2, x, resolve, reject);</span><br><span class="line">            &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">              reject(e);</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;, <span class="number">0</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> promise2; <span class="comment">// 调用then后返回一个新的promise</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">resolvePromise</span>(<span class="params">promise2, x, resolve, reject</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 判断x是不是promise2</span></span><br><span class="line">  <span class="comment">// [规范]里规定了一段代码，这个代码可以实现我们的promise和别人的promise可以进行交互</span></span><br><span class="line">  <span class="keyword">if</span> (promise2 === x) &#123; <span class="comment">// 不能自己等待自己完成</span></span><br><span class="line">    <span class="keyword">return</span> reject(<span class="keyword">new</span> <span class="built_in">TypeError</span>(<span class="string">'循环引用'</span>));</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// x不是null或者是对象或者函数</span></span><br><span class="line">  <span class="keyword">if</span> (x !== <span class="literal">null</span> &amp;&amp; (<span class="keyword">typeof</span> x === <span class="string">'object'</span> || <span class="keyword">typeof</span> x === <span class="string">'function'</span>)) &#123;</span><br><span class="line">    <span class="keyword">let</span> called; <span class="comment">// 防止成功后调用失败</span></span><br><span class="line">    <span class="keyword">try</span> &#123; <span class="comment">// 防止取then是出现异常 Object.defineProperty</span></span><br><span class="line">      <span class="keyword">let</span> then = x.then; <span class="comment">// 取x的then方法 &#123;then:&#123;&#125;&#125;</span></span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">typeof</span> then === <span class="string">'function'</span>) &#123; <span class="comment">// 如果then是函数我就认为它是promise</span></span><br><span class="line">        <span class="comment">// call 第一个参数是this ，后面的是成功的回调和失败的回调</span></span><br><span class="line">        then.call(x, y =&gt; &#123; <span class="comment">// 如果y是promise就继续递归解析promise</span></span><br><span class="line">          <span class="keyword">if</span> (called) <span class="keyword">return</span>;</span><br><span class="line">          called = <span class="literal">true</span>;</span><br><span class="line">          resolvePromise(promise2, y, resolve, reject);</span><br><span class="line">        &#125;, r =&gt; &#123; <span class="comment">// 只要失败了就失败了</span></span><br><span class="line">          <span class="keyword">if</span> (called) <span class="keyword">return</span>;</span><br><span class="line">          called = <span class="literal">true</span>;</span><br><span class="line">          reject(r);</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123; <span class="comment">// then是一个普通对象，就直接成功即可1</span></span><br><span class="line">        resolve(x);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">      <span class="keyword">if</span> (called) <span class="keyword">return</span>;</span><br><span class="line">      called = <span class="literal">true</span>;</span><br><span class="line">      reject(e);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123; <span class="comment">// x = 123</span></span><br><span class="line">    resolve(x); <span class="comment">// x就是一个普通值</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// promise的语法糖，测试</span></span><br><span class="line"><span class="built_in">Promise</span>.deferred = <span class="built_in">Promise</span>.defer = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> dfd = &#123;&#125;;</span><br><span class="line">  dfd.promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>&#123;</span><br><span class="line">    dfd.resolve = resolve;</span><br><span class="line">    dfd.reject = reject;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">return</span> dfd;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// npm install promises-aplus-tests -g</span></span><br><span class="line"><span class="comment">// promises-aplus-tests 文件名</span></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="built_in">Promise</span>;</span><br><span class="line"><span class="comment">// 写完promise会测试一下</span></span><br></pre></td></tr></table></figure>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微信小程序/">微信小程序</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/02/12/html5/" title="MIME Type 多功能网际邮件扩充协议" itemprop="url">MIME Type 多功能网际邮件扩充协议</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
+		
+  </p><p class="article-time">
+    <time datetime="2019-02-11T19:36:51.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="MIME（多功能网际邮件扩充协议）"><a href="#MIME（多功能网际邮件扩充协议）" class="headerlink" title="MIME（多功能网际邮件扩充协议）"></a>MIME（多功能网际邮件扩充协议）</h2><p> MIME意为多目Internet邮件扩展，它设计的最初目的是为了在发送电子邮件时附加多媒体数据，让邮件客户程序能根据其类型进行处理。然而当它被HTTP协议支持之后，它的意义就更为显著了。它使得HTTP传输的不仅是普通的文本，而变得丰富多彩。</p>
+<p> 访问一个网页，获得一个资源后，浏览器通过哪种方式来识别这种资源呢？就是通过媒体资源类型MIME Type,媒体资源类型通过http协议，由web服务器告知浏览器，更详细的说，是通过Content-Type来定义的。<br>    例如：Content-Type: text/HTML</p>
+<p>通常只有一些在互联网上获得广泛应用的格式才会获得一个 MIME Type，如果是某个客户端自己定义的格式，一般只能以 application/x- 开头。</p>
+<h2 id="常见类型"><a href="#常见类型" class="headerlink" title="常见类型"></a>常见类型</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">超文本标记语言文本 .html,.html text/html </span><br><span class="line">普通文本 .txt text/plain </span><br><span class="line">RTF文本 .rtf application/rtf </span><br><span class="line">GIF图形 .gif image/gif </span><br><span class="line">JPEG图形 .ipeg,.jpg image/jpeg </span><br><span class="line">au声音文件 .au audio/basic </span><br><span class="line">MIDI音乐文件 mid,.midi audio/midi,audio/x-midi </span><br><span class="line">RealAudio音乐文件 .ra, .ram audio/x-pn-realaudio </span><br><span class="line">MPEG文件 .mpg,.mpeg video/mpeg </span><br><span class="line">AVI文件 .avi video/x-msvideo </span><br><span class="line">GZIP文件 .gz application/x-gzip </span><br><span class="line">TAR文件 .tar application/x-tar</span><br></pre></td></tr></table></figure>
+<h2 id="Mime-type与Content-type区别"><a href="#Mime-type与Content-type区别" class="headerlink" title="Mime-type与Content-type区别"></a>Mime-type与Content-type区别</h2><p><strong>mime-type</strong> : 文件后缀名</p>
+<p>向web服务器请求一个文件，服务器会根据你的后缀名去匹配对应的值设置为response中content-type的值</p>
+<p><strong>content-type</strong>是正文媒体类型，浏览器根据content-type的不同来分别处理你返回的东西</p>
+<p><strong>例子</strong><br>tomcat(版本为7)下的conf目录下有个web.xml</p>
+<p>1156行开始有个节点为</p>
+<pre><code>&lt;mime-mapping&gt;
+      &lt;extension&gt;css&lt;/extension&gt;
+      &lt;mime-type&gt;text/css&lt;/mime-type&gt;
+&lt;/mime-mapping&gt;
+</code></pre><p>我把这个节点修改为成这样</p>
+<pre><code>&lt;mime-mapping&gt;
+       &lt;extension&gt;css&lt;/extension&gt;
+       &lt;mime-type&gt;text/cssaa&lt;/mime-type&gt;
+&lt;/mime-mapping&gt;
+</code></pre><p>tomcat7请求一个css文件之后抓包后的结果：<br><img src="https://img-blog.csdnimg.cn/20190129014322897.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p>1.请求css文件。</p>
+<p>2.web服务器看到后缀名为css，在对应的配置文件中寻找css的mimetype值。</p>
+<p>3.当请求完成后设置content-type的值。</p>
+<p>4.游览器根据content-type的值处理返回的文件</p>
 
         
         
@@ -171,128 +896,36 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/02/12/sass2/" title="SASS用法指南" itemprop="url">SASS用法指南</a>
+      <a href="/2019/02/12/html4/" title="Canvas 和 SVG的不同点" itemprop="url">Canvas 和 SVG的不同点</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
 		
   </p><p class="article-time">
-    <time datetime="2019-02-11T17:36:26.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    <time datetime="2019-02-11T19:36:42.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
     
   </p>
 </header>
     <div class="article-content">
         
-        <ul>
-<li><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></li>
-</ul>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Sass/">Sass</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2019/02/12/sass1/" title="Sass | 今天有感" itemprop="url">Sass | 今天有感</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
-		
-  </p><p class="article-time">
-    <time datetime="2019-02-11T16:33:55.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>可从官网了解：<a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html" target="_blank" rel="noopener">http://sass-lang.com/documentation/file.SASS_REFERENCE.html</a></p>
-<p>目录结构：<br><img src="https://img-blog.csdnimg.cn/20190211024835231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTU5MzQwOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="test-scss"><a href="#test-scss" class="headerlink" title="test.scss"></a>test.scss</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br></pre></td><td class="code"><pre><span class="line">//变量</span><br><span class="line">$blue : #bdc4fd;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	<span class="attribute">coloe</span>: $blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//变量(镶嵌在字符串之中)</span><br><span class="line">$side : left;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.router</span> &#123;</span><br><span class="line">	border-#&#123;$side&#125;-radius: 10px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//计算</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: (<span class="number">14px</span>/<span class="number">2</span>);</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">200px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//嵌套</span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">h1</span> &#123;</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	h1 &#123;</span><br><span class="line">		<span class="selector-tag">color</span>: <span class="selector-tag">aquamarine</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//继承</span><br><span class="line"><span class="selector-class">.class</span> &#123;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.class2</span> &#123;</span><br><span class="line">	@extend .class;</span><br><span class="line">	<span class="selector-tag">font-size</span>: 10<span class="selector-tag">px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*!</span></span><br><span class="line"><span class="comment">注意：要使用这个解析才能再css文件里面显示出来，否则识别出来是scss文件的解析</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">//Mixin有点像C语言的宏（macro），是可以重用的代码块。</span><br><span class="line">@<span class="keyword">mixin</span> left &#123;</span><br><span class="line">	<span class="selector-tag">float</span>: <span class="selector-tag">left</span>;</span><br><span class="line">	<span class="selector-tag">display</span>: <span class="selector-tag">inline</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.div2</span> &#123;</span><br><span class="line">	@include left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//Mixin传参</span><br><span class="line">@<span class="keyword">mixin</span> left2($value : <span class="number">20px</span>) &#123;</span><br><span class="line">	<span class="selector-tag">float</span>: <span class="selector-tag">left</span>;</span><br><span class="line">	top: $value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.div3</span> &#123;</span><br><span class="line">	@include left2(30px)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//颜色函数</span><br><span class="line"><span class="selector-class">.foooter</span> &#123;</span><br><span class="line">	<span class="attribute">color</span>: <span class="built_in">lighten</span>(#cc3, 10%);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter2</span> &#123;</span><br><span class="line">	color: lighten(#cc3, 10%); // #d6d65c</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter3</span> &#123;</span><br><span class="line">	color: darken(#cc3, 10%); // #a3a329</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter4</span> &#123;</span><br><span class="line">	color: grayscale(#cc3); // #808080</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter5</span> &#123;</span><br><span class="line">	color: complement(#cc3); // #33c</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//插入文件</span><br><span class="line">@<span class="keyword">import</span> <span class="string">'./scss/index.scss'</span>;</span><br><span class="line">@<span class="keyword">import</span> <span class="string">"foo.css"</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//条件语句</span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">	@if 1+1==2 &#123;</span><br><span class="line">		<span class="selector-tag">background</span>: <span class="selector-id">#1231</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	@<span class="keyword">if</span> <span class="number">1</span>+<span class="number">1</span>&gt;<span class="number">2</span> &#123;</span><br><span class="line">		<span class="selector-tag">border</span>: <span class="selector-id">#666</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	@<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="selector-tag">background</span>: <span class="selector-id">#ffffff</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//循环语句</span><br><span class="line">@<span class="keyword">for</span> $i from <span class="number">1</span> to <span class="number">10</span> &#123;</span><br><span class="line">	.border-#&#123;$i&#125; &#123;</span><br><span class="line">		border: #&#123;$i&#125; solid blue;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$i: 6;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">while</span> $i&gt;<span class="number">0</span> &#123;</span><br><span class="line">	.item-#&#123;$i&#125; &#123;</span><br><span class="line">		width: 2em * $i;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	$i: $i - 2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">each</span> $member in a,b,c,d &#123;</span><br><span class="line">	.#&#123;$member&#125; &#123;</span><br><span class="line">		background-image: url("/image/#&#123;$member&#125;.jpg");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//自定义函数</span><br><span class="line">@<span class="keyword">function</span> double($n)&#123;</span><br><span class="line">	@<span class="keyword">return</span> $n * <span class="number">2</span>; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#siderbar</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="built_in">double</span>(10)<span class="built_in">px</span>;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="scss-index-css"><a href="#scss-index-css" class="headerlink" title="./scss/index.css"></a>./scss/index.css</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$index : 100px;</span><br><span class="line"><span class="selector-class">.vick</span>&#123;</span><br><span class="line">    <span class="attribute">backdrop-filter</span>: $index;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="编译结果"><a href="#编译结果" class="headerlink" title="编译结果"></a>编译结果</h3><p>test.css</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">charset</span> <span class="string">"UTF-8"</span>;</span><br><span class="line">@<span class="keyword">import</span> url(foo.css);</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">coloe</span>: <span class="number">#bdc4fd</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.router</span> &#123;</span><br><span class="line">  <span class="attribute">border-left-radius</span>: <span class="number">10px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">7px</span>;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">200px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#666</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: aquamarine; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.class</span>, <span class="selector-class">.class2</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">10px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.class2</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">10px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*!</span></span><br><span class="line"><span class="comment">注意：要使用这个解析才能再css文件里面显示出来，否则识别出来是scss文件的解析</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.div2</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">display</span>: inline; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.div3</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">30px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#d6d65c</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter2</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#d6d65c</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter3</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#a3a329</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter4</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: gray; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.foooter5</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#3333cc</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.vick</span> &#123;</span><br><span class="line">  <span class="attribute">backdrop-filter</span>: <span class="number">100px</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#1231</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffffff</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-1</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-2</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-3</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">3</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-4</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">4</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-5</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">5</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-6</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">6</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-7</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">7</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-8</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">8</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.border-9</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">9</span> solid blue; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item-6</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">12em</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item-4</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">8em</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item-2</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">4em</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.a</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">"/image/a.jpg"</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.b</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">"/image/b.jpg"</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.c</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">"/image/c.jpg"</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.d</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">"/image/d.jpg"</span>); &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#siderbar</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">20</span> px; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*# sourceMappingURL=test.css.map */</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>安装</li>
-</ul>
-<p>SASS是Ruby语言写的，但是两者的语法没有关系。不懂Ruby，照样使用。只是必须先安装Ruby，然后再安装SASS。</p>
-<p>假定你已经安装好了Ruby，接着在命令行输入下面的命令：</p>
-<p>　　</p>
-<blockquote>
-<p>gem install sass</p>
-</blockquote>
-<p>然后，就可以使用了。</p>
-<ul>
-<li>使用</li>
-</ul>
-<p>SASS文件就是普通的文本文件，里面可以直接使用CSS语法。文件后缀名是.scss，意思为Sassy CSS。</p>
-<p>下面的命令，可以在屏幕上显示.scss文件转化的css代码。（假设文件名为test。）</p>
-<p>　　</p>
-<blockquote>
-<p>sass test.scss</p>
-</blockquote>
-<p>如果要将显示结果保存成文件，后面再跟一个.css文件名。</p>
-<p>　　</p>
-<blockquote>
-<p>sass test.scss test.css</p>
-</blockquote>
-<p>SASS提供四个编译风格的选项：</p>
-<p>　　</p>
+        <p>刚刚才发现原来Canvas跟SVG是可以对比的！！！</p>
+<h2 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h2><p>SVG 是一种使用 XML 描述 2D 图形的语言。<br>SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。<br>在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。</p>
 <ol>
-<li>nested：嵌套缩进的css代码，它是默认值</li>
-<li>expanded：没有缩进的、扩展的css代码</li>
-<li>compact：简洁格式的css代码</li>
-<li>compressed：压缩后的css代码</li>
+<li>不依赖分辨率</li>
+<li>支持事件处理器</li>
+<li>最适合带有大型渲染区域的应用程序（比如谷歌地图）</li>
+<li>复杂度高会减慢渲染速度（任何过度使用 DOM 的应用都不快）</li>
+<li>不适合游戏应用</li>
 </ol>
-<p>生产环境当中，一般使用最后一个选项。</p>
-<p>　　</p>
-<blockquote>
-<p>sass –style compressed test.sass test.css</p>
-</blockquote>
-<p>你也可以让SASS监听某个文件或目录，一旦源文件有变动，就自动生成编译后的版本。</p>
-<p>　　</p>
-<blockquote>
-<p>// watch a file</p>
-<p>　　sass –watch input.scss:output.css</p>
-<p>　　// watch a directory</p>
-<p>　　sass –watch app/sass:public/stylesheets</p>
-</blockquote>
-<p>SASS的官方网站，提供了一个<a href="https://www.sassmeister.com/" target="_blank" rel="noopener">在线转换器</a>。你可以在那里，试运行下面的各种例子。</p>
+<h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><p>Canvas 通过 JavaScript 来绘制 2D 图形。<br>Canvas 是逐像素进行渲染的。<br>在 canvas 中，一旦图形被绘制完成，它就不会继续得到浏览器的关注。如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象。</p>
+<ol>
+<li>依赖分辨率</li>
+<li>不支持事件处理器</li>
+<li>弱的文本渲染能力</li>
+<li>能够以 .png 或 .jpg 格式保存结果图像</li>
+<li>最适合图像密集型的游戏，其中的许多对象会被频繁重绘</li>
+</ol>
 
         
         
@@ -306,7 +939,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Sass/">Sass</a>
+  <span></span> <a href="/tags/HTML5/">HTML5</a>
   </div>
 
 </div>
@@ -328,6 +961,10 @@
 
 
 
+
+  <nav id="page-nav" class="clearfix">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
+  </nav>
 
 </div>
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
@@ -347,11 +984,15 @@
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/Sass/" title="Sass">Sass<sup>2</sup></a></li>
+				<li><a href="/tags/微信小程序/" title="微信小程序">微信小程序<sup>8</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/HTML5/" title="HTML5">HTML5<sup>1</sup></a></li>
+				<li><a href="/tags/HTML5/" title="HTML5">HTML5<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Sass/" title="Sass">Sass<sup>2</sup></a></li>
 			
 		
 		</ul>
@@ -559,16 +1200,6 @@ $(document).ready(function(){
 <!-- Analytics Begin -->
 
 
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
 
 

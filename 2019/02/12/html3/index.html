@@ -4,25 +4,25 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
   
-    <title>SASS用法指南 | 隔壁小陈</title>
+    <title>HTML5 | Web 存储 | 隔壁小陈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小陈">
     
 
     
-    <meta name="description" content="SASS用法指南">
-<meta name="keywords" content="Sass">
+    <meta name="description" content="客户端存储数据HTML5 提供了两种在客户端存储数据的新方法：  localStorage - 没有时间限制的数据存储 sessionStorage - 针对一个 session 的数据存储  之前，这些都是由 cookie 完成的。 由于 cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。 localStorage 方法loca">
+<meta name="keywords" content="HTML5">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SASS用法指南">
-<meta property="og:url" content="http://yoursite.com/2019/02/12/sass2/index.html">
+<meta property="og:title" content="HTML5 | Web 存储">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/html3/index.html">
 <meta property="og:site_name" content="隔壁小陈">
-<meta property="og:description" content="SASS用法指南">
+<meta property="og:description" content="客户端存储数据HTML5 提供了两种在客户端存储数据的新方法：  localStorage - 没有时间限制的数据存储 sessionStorage - 针对一个 session 的数据存储  之前，这些都是由 cookie 完成的。 由于 cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。 localStorage 方法loca">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-11T17:37:10.827Z">
+<meta property="og:updated_time" content="2019-02-11T19:38:49.135Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SASS用法指南">
-<meta name="twitter:description" content="SASS用法指南">
+<meta name="twitter:title" content="HTML5 | Web 存储">
+<meta name="twitter:description" content="客户端存储数据HTML5 提供了两种在客户端存储数据的新方法：  localStorage - 没有时间限制的数据存储 sessionStorage - 针对一个 session 的数据存储  之前，这些都是由 cookie 完成的。 由于 cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。 localStorage 方法loca">
 
     
     
@@ -79,14 +79,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/02/12/sass2/" title="SASS用法指南" itemprop="url">SASS用法指南</a>
+      <a href="/2019/02/12/html3/" title="HTML5 | Web 存储" itemprop="url">HTML5 | Web 存储</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小陈" target="_blank" itemprop="author">小陈</a>
 		
   </p><p class="article-time">
-    <time datetime="2019-02-11T17:36:26.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
+    <time datetime="2019-02-11T19:36:02.000Z" itemprop="datePublished"> 发表于 2019-02-12</time>
     
   </p>
 </header>
@@ -95,13 +95,21 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#客户端存储数据"><span class="toc-number">1.</span> <span class="toc-text">客户端存储数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#localStorage-方法"><span class="toc-number">2.</span> <span class="toc-text">localStorage 方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sessionStorage-方法"><span class="toc-number">3.</span> <span class="toc-text">sessionStorage 方法</span></a></li></ol>
 		
 		</div>
 		
-		<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></li>
+		<h2 id="客户端存储数据"><a href="#客户端存储数据" class="headerlink" title="客户端存储数据"></a>客户端存储数据</h2><p>HTML5 提供了两种在客户端存储数据的新方法：</p>
+<ul>
+<li>localStorage - 没有时间限制的数据存储</li>
+<li>sessionStorage - 针对一个 session 的数据存储</li>
 </ul>
+<p>之前，这些都是由 cookie 完成的。</p>
+<p>由于 cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。</p>
+<h2 id="localStorage-方法"><a href="#localStorage-方法" class="headerlink" title="localStorage 方法"></a>localStorage 方法</h2><p>localStorage 方法存储的数据没有时间限制。第二天、第二周或下一年之后，数据依然可用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;result&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">// Check browser support</span><br><span class="line">if (typeof(Storage) !== &quot;undefined&quot;) &#123;</span><br><span class="line">    // Store</span><br><span class="line">    localStorage.setItem(&quot;lastname&quot;, &quot;Gates&quot;);</span><br><span class="line">    // Retrieve</span><br><span class="line">    document.getElementById(&quot;result&quot;).innerHTML = localStorage.getItem(&quot;lastname&quot;);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    document.getElementById(&quot;result&quot;).innerHTML = &quot;抱歉！您的浏览器不支持 Web Storage ...&quot;;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="sessionStorage-方法"><a href="#sessionStorage-方法" class="headerlink" title="sessionStorage 方法"></a>sessionStorage 方法</h2><p>sessionStorage 方法针对一个 session 进行数据存储。当用户关闭浏览器窗口后，数据会被删除。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">function clickCounter() &#123;</span><br><span class="line">    if(typeof(Storage) !== &quot;undefined&quot;) &#123;</span><br><span class="line">        if (sessionStorage.clickcount) &#123;</span><br><span class="line">            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            sessionStorage.clickcount = 1;</span><br><span class="line">        &#125;</span><br><span class="line">        document.getElementById(&quot;result&quot;).innerHTML = &quot;在本 session 中，您已经点击这个按钮 &quot; + sessionStorage.clickcount + &quot; 次。&quot;;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        document.getElementById(&quot;result&quot;).innerHTML = &quot;抱歉！您的浏览器不支持 Web Storage ...&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;p&gt;&lt;button onclick=&quot;clickCounter()&quot; type=&quot;button&quot;&gt;请点击这里&lt;/button&gt;&lt;/p&gt;</span><br><span class="line">&lt;div id=&quot;result&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;p&gt;请点击按钮使计数器递增。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;请关闭浏览器或标签页，然后再试一次，计数器会重置。&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -110,7 +118,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Sass/">Sass</a>
+  <span></span> <a href="/tags/HTML5/">HTML5</a>
   </div>
 
 </div>
@@ -119,7 +127,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2019/02/12/sass2/" data-title="SASS用法指南 | 隔壁小陈" data-tsina="" class="share clearfix">
+	  <div data-url="http://yoursite.com/2019/02/12/html3/" data-title="HTML5 | Web 存储 | 隔壁小陈" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -133,18 +141,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev">
- <a href="/2019/02/12/html1/" title="HTML5 | Application Cache">
+ <a href="/2019/02/12/html6/" title="html6">
   <strong>上一篇：</strong><br>
   <span>
-  HTML5 | Application Cache</span>
+  html6</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2019/02/12/sass1/" title="Sass | 今天有感">
+<a href="/2019/02/12/html2/" title="微信小程序 | wxparse解析HTML">
  <strong>下一篇：</strong><br> 
- <span>Sass | 今天有感
+ <span>微信小程序 | wxparse解析HTML
 </span>
 </a>
 </div>
@@ -161,7 +169,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#客户端存储数据"><span class="toc-number">1.</span> <span class="toc-text">客户端存储数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#localStorage-方法"><span class="toc-number">2.</span> <span class="toc-text">localStorage 方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sessionStorage-方法"><span class="toc-number">3.</span> <span class="toc-text">sessionStorage 方法</span></a></li></ol>
  
   </div>
 
